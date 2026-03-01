@@ -1,0 +1,252 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Flask stuff:
+instance/
+.webassets-cache
+
+# Scrapy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# IPython
+profile_default/
+ipython_config.py
+
+# pyenv
+.python-version
+
+# pipenv
+Pipfile.lock
+
+# poetry
+poetry.lock
+
+# pdm
+.pdm.toml
+.pdm-python
+.pdm-build/
+
+# PEP 582
+__pypackages__/
+
+# Celery stuff
+celerybeat-schedule
+celerybeat.pid
+
+# SageMath parsed files
+*.sage.py
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# Rope project settings
+.ropeproject
+
+# mkdocs documentation
+/site
+
+# mypy
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Cython debug symbols
+cython_debug/
+
+# IDE settings
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project-specific ignores
+
+# Local documentation (not for git)
+CODEBASE_SUMMARY.md
+RESEARCH_PLAN_VS_IMPLEMENTATION.md
+
+# Data files (large) - only at root level
+/data/raw/
+/data/logs/
+*.sdf
+*.mol2
+*.pdb
+*.xyz
+*.csv
+*.pkl
+*.pickle
+*.h5
+*.hdf5
+*.pt
+*.pth
+!configs/**/*.yaml
+
+# Logs and checkpoints
+logs/
+checkpoints/
+wandb/
+outputs/
+
+# Results - ignore checkpoints but keep logs and summaries
+results/**/checkpoints/
+!results/benchmark/logs/**/*.csv
+!results/benchmark/logs/**/*.log
+
+# Cache
+.cache/
+*.cache
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+
+# Conformer files (can be regenerated)
+*.conformers
+
+# Model weights (large)
+weights/
+*.ckpt
+
+# Experiment outputs
+experiments/outputs/
+experiments/results/
+
+# Jupyter notebooks (keep templates only)
+notebooks/*.ipynb
+!notebooks/template_*.ipynb
+
+# Profiling
+*.prof
+*.lprof
+
+# Large binary files
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# RDKit cache
+*.mol
+*.smi
+
+# Optuna databases
+*.db
+optuna_*.log
+
+# HPC/SLURM
+slurm-*.out
+slurm-*.err
+cluster_tests/
+*.slurm
+
+# Test results (regeneratable)
+test_results/
+validation_results/
+cluster_validation/
+
+# Experiments (keep configs, ignore outputs)
+experiments/*/checkpoints/
+experiments/*/metrics/
+experiments/**/training.log
+experiments/**/results.json

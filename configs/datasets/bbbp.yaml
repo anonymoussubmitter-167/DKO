@@ -1,0 +1,54 @@
+# BBBP dataset configuration
+# Blood-brain barrier penetration prediction
+
+name: "BBBP"
+type: "classification"
+num_molecules: 2039
+task: "bbb_penetration"
+metric: "auc"
+target_column: "p_np"
+smiles_column: "smiles"
+
+description: |
+  Blood-Brain Barrier Penetration dataset. Binary classification
+  of whether a compound can cross the blood-brain barrier.
+  Critical for CNS drug development.
+
+property_type: "weakly_conformationally_dependent"
+expected_dko_advantage: 0.015  # 1-2% improvement in AUC
+
+class_balance:
+  positive_ratio: 0.77  # Imbalanced towards penetrating
+
+preprocessing:
+  standardize_smiles: true
+  remove_salts: true
+
+conformational_notes: |
+  BBB penetration depends on physicochemical properties (logP, PSA)
+  which have some conformational dependence. The relationship is
+  weaker than for direct receptor binding.
+
+# Physicochemical property filters
+property_filters:
+  molecular_weight: [0, 600]
+  logP: [-5, 7]
+  tpsa: [0, 150]
+  hbd: [0, 10]
+  hba: [0, 15]
+
+data:
+  conformer_generation:
+    max_conformers: 20
+    energy_window: 10.0
+
+training:
+  base_learning_rate: 1.0e-4
+  batch_size: 64
+  max_epochs: 150
+  class_weights: "balanced"
+
+source:
+  paper: "MoleculeNet: A Benchmark for Molecular Machine Learning"
+  url: "https://moleculenet.org/datasets-1"
+  license: "MIT"

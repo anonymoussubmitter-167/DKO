@@ -1,0 +1,49 @@
+# BACE dataset configuration
+# Beta-secretase 1 (BACE-1) binding affinity prediction
+
+name: "BACE"
+type: "regression"
+num_molecules: 1513
+task: "binding_affinity"
+metric: "rmse"
+target_column: "pIC50"
+smiles_column: "smiles"
+
+description: |
+  BACE-1 binding affinity dataset. Beta-secretase 1 is a protease
+  implicated in Alzheimer's disease. This dataset contains binding
+  affinities (pIC50 values) for small molecule inhibitors.
+
+property_type: "conformationally_dependent"
+expected_dko_advantage: 0.07  # 5-8% improvement over single conformer
+
+# Dataset-specific preprocessing
+preprocessing:
+  standardize_smiles: true
+  remove_salts: true
+  remove_stereo: false
+  remove_isotopes: true
+
+# Expected conformational influence
+conformational_notes: |
+  Binding affinity is highly dependent on the 3D shape complementarity
+  between the ligand and the BACE-1 binding pocket. Multiple conformers
+  capture different binding poses and flexibility.
+
+# Recommended conformer settings (may override base)
+data:
+  conformer_generation:
+    max_conformers: 50
+    energy_window: 15.0
+
+# Training adjustments for this dataset
+training:
+  base_learning_rate: 1.0e-4
+  batch_size: 32
+  max_epochs: 300
+
+# Source information
+source:
+  paper: "MoleculeNet: A Benchmark for Molecular Machine Learning"
+  url: "https://moleculenet.org/datasets-1"
+  license: "MIT"

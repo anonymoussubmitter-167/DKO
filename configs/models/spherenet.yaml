@@ -1,0 +1,63 @@
+# SphereNet model configuration
+# Spherical message passing neural network
+
+name: "SphereNet"
+description: |
+  SphereNet: Spherical message passing for molecular property
+  prediction. Uses full 3D geometric information including
+  torsion angles through spherical harmonics.
+
+architecture:
+  # Core parameters
+  energy_and_force: false  # Set true for force prediction
+  hidden_channels: 128
+  out_channels: 1
+
+  # Message passing layers
+  num_layers: 4
+
+  # Spherical harmonics
+  lmax: 2  # Maximum angular momentum
+
+  # Cutoffs
+  cutoff: 5.0
+
+  # Aggregation
+  int_emb_size: 64
+  basis_emb_size_dist: 8
+  basis_emb_size_angle: 8
+  basis_emb_size_torsion: 8
+
+  out_emb_channels: 256
+  num_spherical: 7
+  num_radial: 6
+  num_output_layers: 3
+
+hyperparameter_search:
+  learning_rate:
+    type: "log_uniform"
+    low: 1.0e-5
+    high: 1.0e-3
+
+  hidden_channels:
+    type: "categorical"
+    choices: [64, 128, 256]
+
+  num_layers:
+    type: "int"
+    low: 2
+    high: 6
+
+  lmax:
+    type: "int"
+    low: 1
+    high: 3
+
+  cutoff:
+    type: "categorical"
+    choices: [4.0, 5.0, 6.0]
+
+training:
+  batch_size: 16
+  base_learning_rate: 1.0e-4
+  max_epochs: 500

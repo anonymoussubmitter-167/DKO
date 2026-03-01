@@ -1,0 +1,775 @@
+{
+  "timestamp": "2026-02-27T07:44:05.103801",
+  "config": {
+    "datasets": [
+      "esol",
+      "freesolv",
+      "lipophilicity",
+      "qm9_gap"
+    ],
+    "seeds": [
+      42,
+      123,
+      456
+    ],
+    "n_conformers_3d": 20
+  },
+  "raw_results": [
+    {
+      "dataset": "esol",
+      "features": "3D-only (mu)",
+      "seed": 42,
+      "rmse": 1.3245847747382322,
+      "mae": 1.024851433174652,
+      "r2": 0.5702177646504062,
+      "feature_dim": 28
+    },
+    {
+      "dataset": "esol",
+      "features": "3D-only (mu)",
+      "seed": 123,
+      "rmse": 1.3243347149017453,
+      "mae": 1.0553753655782918,
+      "r2": 0.5703800209787904,
+      "feature_dim": 28
+    },
+    {
+      "dataset": "esol",
+      "features": "3D-only (mu)",
+      "seed": 456,
+      "rmse": 1.3713955752445226,
+      "mae": 1.0870055887276928,
+      "r2": 0.5393040116050678,
+      "feature_dim": 28
+    },
+    {
+      "dataset": "esol",
+      "features": "3D mu+sigma",
+      "seed": 42,
+      "rmse": 1.3603585810256156,
+      "mae": 1.0863772273021834,
+      "r2": 0.5466895365673949,
+      "feature_dim": 33
+    },
+    {
+      "dataset": "esol",
+      "features": "3D mu+sigma",
+      "seed": 123,
+      "rmse": 1.378322580712425,
+      "mae": 1.074230310675345,
+      "r2": 0.5346382488233583,
+      "feature_dim": 33
+    },
+    {
+      "dataset": "esol",
+      "features": "3D mu+sigma",
+      "seed": 456,
+      "rmse": 1.3396767707995971,
+      "mae": 1.0492430451271828,
+      "r2": 0.5603683032531295,
+      "feature_dim": 33
+    },
+    {
+      "dataset": "esol",
+      "features": "FP-only",
+      "seed": 42,
+      "rmse": 1.5114290383390065,
+      "mae": 1.1270435735970212,
+      "r2": 0.4404170590064882,
+      "feature_dim": 2048
+    },
+    {
+      "dataset": "esol",
+      "features": "FP-only",
+      "seed": 123,
+      "rmse": 1.478438733875267,
+      "mae": 1.0915794860689265,
+      "r2": 0.4645787456908075,
+      "feature_dim": 2048
+    },
+    {
+      "dataset": "esol",
+      "features": "FP-only",
+      "seed": 456,
+      "rmse": 1.529535099988095,
+      "mae": 1.1614749890043026,
+      "r2": 0.4269297832783826,
+      "feature_dim": 2048
+    },
+    {
+      "dataset": "esol",
+      "features": "FP + 3D mu",
+      "seed": 42,
+      "rmse": 1.0122924516740963,
+      "mae": 0.8119835602400596,
+      "r2": 0.7489842687623451,
+      "feature_dim": 2076
+    },
+    {
+      "dataset": "esol",
+      "features": "FP + 3D mu",
+      "seed": 123,
+      "rmse": 1.035766212187687,
+      "mae": 0.8472654507086989,
+      "r2": 0.7372078292839455,
+      "feature_dim": 2076
+    },
+    {
+      "dataset": "esol",
+      "features": "FP + 3D mu",
+      "seed": 456,
+      "rmse": 1.0283431726754617,
+      "mae": 0.845324733916082,
+      "r2": 0.7409610441123401,
+      "feature_dim": 2076
+    },
+    {
+      "dataset": "esol",
+      "features": "FP + 3D mu+sigma",
+      "seed": 42,
+      "rmse": 1.0190900070272597,
+      "mae": 0.8426304942202151,
+      "r2": 0.745601803123399,
+      "feature_dim": 2081
+    },
+    {
+      "dataset": "esol",
+      "features": "FP + 3D mu+sigma",
+      "seed": 123,
+      "rmse": 1.0068502800241055,
+      "mae": 0.8391480081091849,
+      "r2": 0.7516759783309904,
+      "feature_dim": 2081
+    },
+    {
+      "dataset": "esol",
+      "features": "FP + 3D mu+sigma",
+      "seed": 456,
+      "rmse": 0.9746041161063327,
+      "mae": 0.8009089898770316,
+      "r2": 0.7673273023132207,
+      "feature_dim": 2081
+    },
+    {
+      "dataset": "esol",
+      "features": "FP + Geo mu+sigma (baseline)",
+      "seed": 42,
+      "rmse": 1.3792697554025979,
+      "mae": 1.0775005115500669,
+      "r2": 0.5339984416709447,
+      "feature_dim": 2309
+    },
+    {
+      "dataset": "esol",
+      "features": "FP + Geo mu+sigma (baseline)",
+      "seed": 123,
+      "rmse": 1.3509102711797658,
+      "mae": 1.0700422007744772,
+      "r2": 0.5529645643728013,
+      "feature_dim": 2309
+    },
+    {
+      "dataset": "esol",
+      "features": "FP + Geo mu+sigma (baseline)",
+      "seed": 456,
+      "rmse": 1.3439777064815803,
+      "mae": 1.0704159891061618,
+      "r2": 0.5575409603064242,
+      "feature_dim": 2309
+    },
+    {
+      "dataset": "esol",
+      "features": "FP + 3D + Geo (all)",
+      "seed": 42,
+      "rmse": 1.1060892336501589,
+      "mae": 0.880469316757562,
+      "r2": 0.7003120555919231,
+      "feature_dim": 2342
+    },
+    {
+      "dataset": "esol",
+      "features": "FP + 3D + Geo (all)",
+      "seed": 123,
+      "rmse": 1.0859298124011796,
+      "mae": 0.8682416622931499,
+      "r2": 0.7111366423600215,
+      "feature_dim": 2342
+    },
+    {
+      "dataset": "esol",
+      "features": "FP + 3D + Geo (all)",
+      "seed": 456,
+      "rmse": 1.0904898791330333,
+      "mae": 0.8625784667709419,
+      "r2": 0.7087055425603752,
+      "feature_dim": 2342
+    },
+    {
+      "dataset": "freesolv",
+      "features": "3D-only (mu)",
+      "seed": 42,
+      "rmse": 3.9964711820691265,
+      "mae": 3.0709109609994014,
+      "r2": -0.1491967708882258,
+      "feature_dim": 28
+    },
+    {
+      "dataset": "freesolv",
+      "features": "3D-only (mu)",
+      "seed": 123,
+      "rmse": 4.011754920657583,
+      "mae": 3.153608801646666,
+      "r2": -0.15800334416363304,
+      "feature_dim": 28
+    },
+    {
+      "dataset": "freesolv",
+      "features": "3D-only (mu)",
+      "seed": 456,
+      "rmse": 4.149773046416111,
+      "mae": 3.2930249010541224,
+      "r2": -0.23905252397824084,
+      "feature_dim": 28
+    },
+    {
+      "dataset": "freesolv",
+      "features": "3D mu+sigma",
+      "seed": 42,
+      "rmse": 4.02364847523855,
+      "mae": 2.959063014182177,
+      "r2": -0.1648797322593909,
+      "feature_dim": 33
+    },
+    {
+      "dataset": "freesolv",
+      "features": "3D mu+sigma",
+      "seed": 123,
+      "rmse": 4.073212001411576,
+      "mae": 2.9996238633719363,
+      "r2": -0.19375459163105746,
+      "feature_dim": 33
+    },
+    {
+      "dataset": "freesolv",
+      "features": "3D mu+sigma",
+      "seed": 456,
+      "rmse": 4.203932143898867,
+      "mae": 3.082825768058951,
+      "r2": -0.2716055667453965,
+      "feature_dim": 33
+    },
+    {
+      "dataset": "freesolv",
+      "features": "FP-only",
+      "seed": 42,
+      "rmse": 3.0267592906800322,
+      "mae": 2.1588874861679295,
+      "r2": 0.340830970897644,
+      "feature_dim": 2048
+    },
+    {
+      "dataset": "freesolv",
+      "features": "FP-only",
+      "seed": 123,
+      "rmse": 3.030339115396785,
+      "mae": 2.202741388169202,
+      "r2": 0.3392708170828015,
+      "feature_dim": 2048
+    },
+    {
+      "dataset": "freesolv",
+      "features": "FP-only",
+      "seed": 456,
+      "rmse": 2.7594843669949944,
+      "mae": 2.040294442913749,
+      "r2": 0.45210554932612745,
+      "feature_dim": 2048
+    },
+    {
+      "dataset": "freesolv",
+      "features": "FP + 3D mu",
+      "seed": 42,
+      "rmse": 3.02231777803731,
+      "mae": 2.182606473467567,
+      "r2": 0.34276410083244424,
+      "feature_dim": 2076
+    },
+    {
+      "dataset": "freesolv",
+      "features": "FP + 3D mu",
+      "seed": 123,
+      "rmse": 2.837105112111359,
+      "mae": 2.045895739956336,
+      "r2": 0.4208489097588026,
+      "feature_dim": 2076
+    },
+    {
+      "dataset": "freesolv",
+      "features": "FP + 3D mu",
+      "seed": 456,
+      "rmse": 2.9488456129526144,
+      "mae": 2.1630193107561633,
+      "r2": 0.3743303382467613,
+      "feature_dim": 2076
+    },
+    {
+      "dataset": "freesolv",
+      "features": "FP + 3D mu+sigma",
+      "seed": 42,
+      "rmse": 3.1535664918655892,
+      "mae": 2.2799565180214967,
+      "r2": 0.28444172180062766,
+      "feature_dim": 2081
+    },
+    {
+      "dataset": "freesolv",
+      "features": "FP + 3D mu+sigma",
+      "seed": 123,
+      "rmse": 3.3815840646970816,
+      "mae": 2.4322957491874697,
+      "r2": 0.1772244032940128,
+      "feature_dim": 2081
+    },
+    {
+      "dataset": "freesolv",
+      "features": "FP + 3D mu+sigma",
+      "seed": 456,
+      "rmse": 2.68364623510527,
+      "mae": 1.9323535959720615,
+      "r2": 0.48180698259240573,
+      "feature_dim": 2081
+    },
+    {
+      "dataset": "freesolv",
+      "features": "FP + Geo mu+sigma (baseline)",
+      "seed": 42,
+      "rmse": 3.1113891668950964,
+      "mae": 2.5045935986258763,
+      "r2": 0.30345417066644864,
+      "feature_dim": 2309
+    },
+    {
+      "dataset": "freesolv",
+      "features": "FP + Geo mu+sigma (baseline)",
+      "seed": 123,
+      "rmse": 2.6458843878536817,
+      "mae": 2.0508491285497494,
+      "r2": 0.49628747128263373,
+      "feature_dim": 2309
+    },
+    {
+      "dataset": "freesolv",
+      "features": "FP + Geo mu+sigma (baseline)",
+      "seed": 456,
+      "rmse": 2.7140590244122613,
+      "mae": 2.1326359777450565,
+      "r2": 0.4699954447636606,
+      "feature_dim": 2309
+    },
+    {
+      "dataset": "freesolv",
+      "features": "FP + 3D + Geo (all)",
+      "seed": 42,
+      "rmse": 2.5682257452507073,
+      "mae": 2.0084552780498157,
+      "r2": 0.5254222028460106,
+      "feature_dim": 2342
+    },
+    {
+      "dataset": "freesolv",
+      "features": "FP + 3D + Geo (all)",
+      "seed": 123,
+      "rmse": 2.553346579231941,
+      "mae": 2.019942768400366,
+      "r2": 0.5309052619230712,
+      "feature_dim": 2342
+    },
+    {
+      "dataset": "freesolv",
+      "features": "FP + 3D + Geo (all)",
+      "seed": 456,
+      "rmse": 2.66879453081448,
+      "mae": 2.039690975877372,
+      "r2": 0.48752662910068756,
+      "feature_dim": 2342
+    },
+    {
+      "dataset": "lipophilicity",
+      "features": "3D-only (mu)",
+      "seed": 42,
+      "rmse": 1.1276900074319165,
+      "mae": 0.8760906923328127,
+      "r2": 0.06248402212686621,
+      "feature_dim": 28
+    },
+    {
+      "dataset": "lipophilicity",
+      "features": "3D-only (mu)",
+      "seed": 123,
+      "rmse": 1.108350489672711,
+      "mae": 0.8608325056064696,
+      "r2": 0.09436447772137113,
+      "feature_dim": 28
+    },
+    {
+      "dataset": "lipophilicity",
+      "features": "3D-only (mu)",
+      "seed": 456,
+      "rmse": 1.1207593187540486,
+      "mae": 0.876676239104498,
+      "r2": 0.07397239992641247,
+      "feature_dim": 28
+    },
+    {
+      "dataset": "lipophilicity",
+      "features": "3D mu+sigma",
+      "seed": 42,
+      "rmse": 1.087060167877054,
+      "mae": 0.8456217492818833,
+      "r2": 0.12882304430809088,
+      "feature_dim": 33
+    },
+    {
+      "dataset": "lipophilicity",
+      "features": "3D mu+sigma",
+      "seed": 123,
+      "rmse": 1.0855694382862973,
+      "mae": 0.8420148075989315,
+      "r2": 0.1312107664092541,
+      "feature_dim": 33
+    },
+    {
+      "dataset": "lipophilicity",
+      "features": "3D mu+sigma",
+      "seed": 456,
+      "rmse": 1.1090681116898584,
+      "mae": 0.8521643555433978,
+      "r2": 0.09319135713806692,
+      "feature_dim": 33
+    },
+    {
+      "dataset": "lipophilicity",
+      "features": "FP-only",
+      "seed": 42,
+      "rmse": 0.9041275755847389,
+      "mae": 0.7062201347833589,
+      "r2": 0.3973590426329796,
+      "feature_dim": 2048
+    },
+    {
+      "dataset": "lipophilicity",
+      "features": "FP-only",
+      "seed": 123,
+      "rmse": 0.9190049731800419,
+      "mae": 0.7270659518915983,
+      "r2": 0.3773629827779662,
+      "feature_dim": 2048
+    },
+    {
+      "dataset": "lipophilicity",
+      "features": "FP-only",
+      "seed": 456,
+      "rmse": 0.9069707638695867,
+      "mae": 0.7118235588714126,
+      "r2": 0.3935628620178552,
+      "feature_dim": 2048
+    },
+    {
+      "dataset": "lipophilicity",
+      "features": "FP + 3D mu",
+      "seed": 42,
+      "rmse": 0.8653899372696287,
+      "mae": 0.6879846948867753,
+      "r2": 0.44789345488169385,
+      "feature_dim": 2076
+    },
+    {
+      "dataset": "lipophilicity",
+      "features": "FP + 3D mu",
+      "seed": 123,
+      "rmse": 0.8643797477915147,
+      "mae": 0.6894243449341684,
+      "r2": 0.4491816757677408,
+      "feature_dim": 2076
+    },
+    {
+      "dataset": "lipophilicity",
+      "features": "FP + 3D mu",
+      "seed": 456,
+      "rmse": 0.8729790769100719,
+      "mae": 0.6950953321375307,
+      "r2": 0.4381674668690333,
+      "feature_dim": 2076
+    },
+    {
+      "dataset": "lipophilicity",
+      "features": "FP + 3D mu+sigma",
+      "seed": 42,
+      "rmse": 0.8659648788775707,
+      "mae": 0.6951019333159284,
+      "r2": 0.4471596019519365,
+      "feature_dim": 2081
+    },
+    {
+      "dataset": "lipophilicity",
+      "features": "FP + 3D mu+sigma",
+      "seed": 123,
+      "rmse": 0.8691629246477915,
+      "mae": 0.6921552225810786,
+      "r2": 0.44306873497460286,
+      "feature_dim": 2081
+    },
+    {
+      "dataset": "lipophilicity",
+      "features": "FP + 3D mu+sigma",
+      "seed": 456,
+      "rmse": 0.8836131441504372,
+      "mae": 0.6991594970271746,
+      "r2": 0.4243963370914672,
+      "feature_dim": 2081
+    },
+    {
+      "dataset": "lipophilicity",
+      "features": "FP + Geo mu+sigma (baseline)",
+      "seed": 42,
+      "rmse": 0.9556695182330053,
+      "mae": 0.7429208066236405,
+      "r2": 0.3266905932803411,
+      "feature_dim": 2309
+    },
+    {
+      "dataset": "lipophilicity",
+      "features": "FP + Geo mu+sigma (baseline)",
+      "seed": 123,
+      "rmse": 0.9647005819337598,
+      "mae": 0.7564079183453606,
+      "r2": 0.3139049361219354,
+      "feature_dim": 2309
+    },
+    {
+      "dataset": "lipophilicity",
+      "features": "FP + Geo mu+sigma (baseline)",
+      "seed": 456,
+      "rmse": 0.9494991858280728,
+      "mae": 0.7367029753540245,
+      "r2": 0.3353570428332143,
+      "feature_dim": 2309
+    },
+    {
+      "dataset": "lipophilicity",
+      "features": "FP + 3D + Geo (all)",
+      "seed": 42,
+      "rmse": 0.9221328602301487,
+      "mae": 0.7210883289873602,
+      "r2": 0.37311740718245245,
+      "feature_dim": 2342
+    },
+    {
+      "dataset": "lipophilicity",
+      "features": "FP + 3D + Geo (all)",
+      "seed": 123,
+      "rmse": 0.9135721237219588,
+      "mae": 0.7139163447987465,
+      "r2": 0.38470286581608326,
+      "feature_dim": 2342
+    },
+    {
+      "dataset": "lipophilicity",
+      "features": "FP + 3D + Geo (all)",
+      "seed": 456,
+      "rmse": 0.9111561352398843,
+      "mae": 0.7155777137279511,
+      "r2": 0.3879529324953792,
+      "feature_dim": 2342
+    },
+    {
+      "dataset": "qm9_gap",
+      "features": "3D-only (mu)",
+      "seed": 42,
+      "rmse": 0.03457511924401952,
+      "mae": 0.02720318290692974,
+      "r2": 0.5169166894278772,
+      "feature_dim": 28
+    },
+    {
+      "dataset": "qm9_gap",
+      "features": "3D-only (mu)",
+      "seed": 123,
+      "rmse": 0.034733833093487175,
+      "mae": 0.027586912744931528,
+      "r2": 0.5124714125141563,
+      "feature_dim": 28
+    },
+    {
+      "dataset": "qm9_gap",
+      "features": "3D-only (mu)",
+      "seed": 456,
+      "rmse": 0.03455526610481459,
+      "mae": 0.027395141905914425,
+      "r2": 0.5174713059794072,
+      "feature_dim": 28
+    },
+    {
+      "dataset": "qm9_gap",
+      "features": "3D mu+sigma",
+      "seed": 42,
+      "rmse": 0.03390088825802124,
+      "mae": 0.026954565011069413,
+      "r2": 0.5355736889006044,
+      "feature_dim": 33
+    },
+    {
+      "dataset": "qm9_gap",
+      "features": "3D mu+sigma",
+      "seed": 123,
+      "rmse": 0.034003054108724846,
+      "mae": 0.02715211206531025,
+      "r2": 0.5327702221767929,
+      "feature_dim": 33
+    },
+    {
+      "dataset": "qm9_gap",
+      "features": "3D mu+sigma",
+      "seed": 456,
+      "rmse": 0.03429918616615543,
+      "mae": 0.02717319167294427,
+      "r2": 0.5245965910703222,
+      "feature_dim": 33
+    },
+    {
+      "dataset": "qm9_gap",
+      "features": "FP-only",
+      "seed": 42,
+      "rmse": 0.02018610974884746,
+      "mae": 0.014766983265801874,
+      "r2": 0.8353355223173524,
+      "feature_dim": 2048
+    },
+    {
+      "dataset": "qm9_gap",
+      "features": "FP-only",
+      "seed": 123,
+      "rmse": 0.020274256204686553,
+      "mae": 0.014807476746124747,
+      "r2": 0.8338943054965707,
+      "feature_dim": 2048
+    },
+    {
+      "dataset": "qm9_gap",
+      "features": "FP-only",
+      "seed": 456,
+      "rmse": 0.02038461512428242,
+      "mae": 0.014908048160413174,
+      "r2": 0.8320810566100082,
+      "feature_dim": 2048
+    },
+    {
+      "dataset": "qm9_gap",
+      "features": "FP + 3D mu",
+      "seed": 42,
+      "rmse": 0.019541064784439587,
+      "mae": 0.0142863356711852,
+      "r2": 0.8456910522483709,
+      "feature_dim": 2076
+    },
+    {
+      "dataset": "qm9_gap",
+      "features": "FP + 3D mu",
+      "seed": 123,
+      "rmse": 0.019630887510901734,
+      "mae": 0.014404684448691562,
+      "r2": 0.8442691946243324,
+      "feature_dim": 2076
+    },
+    {
+      "dataset": "qm9_gap",
+      "features": "FP + 3D mu",
+      "seed": 456,
+      "rmse": 0.01960426165269053,
+      "mae": 0.01433985919365708,
+      "r2": 0.8446913512245701,
+      "feature_dim": 2076
+    },
+    {
+      "dataset": "qm9_gap",
+      "features": "FP + 3D mu+sigma",
+      "seed": 42,
+      "rmse": 0.019592110630132414,
+      "mae": 0.014385224356151997,
+      "r2": 0.844883816932601,
+      "feature_dim": 2081
+    },
+    {
+      "dataset": "qm9_gap",
+      "features": "FP + 3D mu+sigma",
+      "seed": 123,
+      "rmse": 0.01953761934175036,
+      "mae": 0.014301380406724221,
+      "r2": 0.8457454623607076,
+      "feature_dim": 2081
+    },
+    {
+      "dataset": "qm9_gap",
+      "features": "FP + 3D mu+sigma",
+      "seed": 456,
+      "rmse": 0.01967020883177304,
+      "mae": 0.014430689801720426,
+      "r2": 0.8436447018404504,
+      "feature_dim": 2081
+    },
+    {
+      "dataset": "qm9_gap",
+      "features": "FP + Geo mu+sigma (baseline)",
+      "seed": 42,
+      "rmse": 0.021050996393531907,
+      "mae": 0.01542928194924799,
+      "r2": 0.8209229323203102,
+      "feature_dim": 2309
+    },
+    {
+      "dataset": "qm9_gap",
+      "features": "FP + Geo mu+sigma (baseline)",
+      "seed": 123,
+      "rmse": 0.020991711493375607,
+      "mae": 0.015427297329977547,
+      "r2": 0.8219301641319944,
+      "feature_dim": 2309
+    },
+    {
+      "dataset": "qm9_gap",
+      "features": "FP + Geo mu+sigma (baseline)",
+      "seed": 456,
+      "rmse": 0.021078989565480793,
+      "mae": 0.015399375203691853,
+      "r2": 0.8204463498249537,
+      "feature_dim": 2309
+    },
+    {
+      "dataset": "qm9_gap",
+      "features": "FP + 3D + Geo (all)",
+      "seed": 42,
+      "rmse": 0.020436883555437005,
+      "mae": 0.014941756618584637,
+      "r2": 0.8312188267270172,
+      "feature_dim": 2342
+    },
+    {
+      "dataset": "qm9_gap",
+      "features": "FP + 3D + Geo (all)",
+      "seed": 123,
+      "rmse": 0.020136316687463233,
+      "mae": 0.014661243168721024,
+      "r2": 0.836146875879813,
+      "feature_dim": 2342
+    },
+    {
+      "dataset": "qm9_gap",
+      "features": "FP + 3D + Geo (all)",
+      "seed": 456,
+      "rmse": 0.02043256684603361,
+      "mae": 0.014867016009585395,
+      "r2": 0.8312901196254672,
+      "feature_dim": 2342
+    }
+  ]
+}

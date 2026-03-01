@@ -1,0 +1,51 @@
+# Lipophilicity dataset configuration
+# Octanol/water distribution coefficient prediction
+
+name: "Lipophilicity"
+type: "regression"
+num_molecules: 4200
+task: "lipophilicity"
+metric: "rmse"
+target_column: "exp"
+smiles_column: "smiles"
+unit: "logD at pH 7.4"
+
+description: |
+  Lipophilicity dataset containing experimentally measured
+  octanol/water distribution coefficients (logD at pH 7.4).
+  Important for ADME property prediction.
+
+property_type: "weakly_conformationally_dependent"
+expected_dko_advantage: 0.02  # 1-3% improvement
+
+preprocessing:
+  standardize_smiles: true
+  remove_salts: true
+  neutralize: false  # Keep ionization states
+
+conformational_notes: |
+  Lipophilicity depends on molecular surface properties which have
+  some conformational dependence. Extended vs folded conformations
+  can expose different hydrophobic surfaces.
+
+# Value statistics
+value_range:
+  min: -1.5
+  max: 4.5
+  mean: 2.2
+  std: 1.3
+
+data:
+  conformer_generation:
+    max_conformers: 20
+    energy_window: 10.0
+
+training:
+  base_learning_rate: 1.0e-4
+  batch_size: 64
+  max_epochs: 200
+
+source:
+  paper: "ChEMBL lipophilicity data"
+  url: "https://www.ebi.ac.uk/chembl/"
+  license: "CC-BY-SA"

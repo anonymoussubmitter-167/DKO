@@ -1,0 +1,55 @@
+# ESOL dataset configuration
+# Aqueous solubility prediction
+
+name: "ESOL"
+type: "regression"
+num_molecules: 1128
+task: "aqueous_solubility"
+metric: "rmse"
+target_column: "measured log solubility in mols per litre"
+smiles_column: "smiles"
+unit: "log mol/L"
+
+description: |
+  ESOL (Estimated SOLubility) dataset containing experimentally
+  measured aqueous solubility values. A classic benchmark for
+  molecular property prediction.
+
+property_type: "weakly_conformationally_dependent"
+expected_dko_advantage: 0.02  # 1-3% improvement
+
+preprocessing:
+  standardize_smiles: true
+  remove_salts: true
+
+conformational_notes: |
+  Solubility depends on crystal packing and solvation, both of which
+  have conformational components. However, the relationship is less
+  direct than for receptor binding.
+
+# Range of values in dataset
+value_range:
+  min: -11.6
+  max: 1.6
+  mean: -3.05
+  std: 2.1
+
+data:
+  conformer_generation:
+    max_conformers: 20
+    energy_window: 10.0
+
+training:
+  base_learning_rate: 1.0e-4
+  batch_size: 32
+  max_epochs: 200
+
+# Comparison to ESOL equation
+baseline_comparison:
+  esol_equation_rmse: 0.58
+  delaney_rmse: 0.72
+
+source:
+  paper: "ESOL: Estimating Aqueous Solubility Directly from Molecular Structure"
+  url: "https://pubs.acs.org/doi/10.1021/ci034243x"
+  license: "CC-BY"

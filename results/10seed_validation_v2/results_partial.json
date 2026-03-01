@@ -1,0 +1,1209 @@
+[
+  {
+    "dataset": "esol",
+    "model": "dko_gated",
+    "seed": 42,
+    "test_metrics": {
+      "rmse": 1.7040266397614574,
+      "mae": 1.3054006099700928,
+      "r2": 0.2887182831764221,
+      "pearson": 0.5399215221405029,
+      "pearson_p": 5.671801677719842e-10,
+      "spearman": 0.5141554138931286,
+      "spearman_p": 4.882409194508496e-09,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "dko_gated",
+    "seed": 123,
+    "test_metrics": {
+      "rmse": 1.5431259654626495,
+      "mae": 1.201474905014038,
+      "r2": 0.41670048236846924,
+      "pearson": 0.6471086144447327,
+      "pearson_p": 7.32138975252187e-15,
+      "spearman": 0.5630585476405979,
+      "spearman_p": 6.986607980326763e-11,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "dko_gated",
+    "seed": 456,
+    "test_metrics": {
+      "rmse": 1.6649280857902757,
+      "mae": 1.2767304182052612,
+      "r2": 0.3209843039512634,
+      "pearson": 0.5690890550613403,
+      "pearson_p": 3.940247862648092e-11,
+      "spearman": 0.4859103731660034,
+      "spearman_p": 4.2462015075577244e-08,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "dko_gated",
+    "seed": 789,
+    "test_metrics": {
+      "rmse": 1.596497206219846,
+      "mae": 1.2527905702590942,
+      "r2": 0.3756542205810547,
+      "pearson": 0.6189777851104736,
+      "pearson_p": 2.1352978647241909e-13,
+      "spearman": 0.5622395211036001,
+      "spearman_p": 7.545088469252685e-11,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "dko_gated",
+    "seed": 1000,
+    "test_metrics": {
+      "rmse": 1.6194860368334563,
+      "mae": 1.2424697875976562,
+      "r2": 0.3575441241264343,
+      "pearson": 0.5994895696640015,
+      "pearson_p": 1.825431107456618e-12,
+      "spearman": 0.522909806702372,
+      "spearman_p": 2.397264401567255e-09,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "dko_gated",
+    "seed": 1111,
+    "test_metrics": {
+      "rmse": 1.5536924465381061,
+      "mae": 1.2332258224487305,
+      "r2": 0.4086848497390747,
+      "pearson": 0.641563892364502,
+      "pearson_p": 1.4632828368630718e-14,
+      "spearman": 0.557854043010198,
+      "spearman_p": 1.1348875775737917e-10,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "dko_gated",
+    "seed": 2222,
+    "test_metrics": {
+      "rmse": 1.7238493440256974,
+      "mae": 1.3431470394134521,
+      "r2": 0.27207356691360474,
+      "pearson": 0.5400972962379456,
+      "pearson_p": 5.585628947029618e-10,
+      "spearman": 0.4804210646046393,
+      "spearman_p": 6.322756551659138e-08,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "dko_gated",
+    "seed": 3333,
+    "test_metrics": {
+      "rmse": 1.6037170060674442,
+      "mae": 1.1567133665084839,
+      "r2": 0.36999452114105225,
+      "pearson": 0.6194450855255127,
+      "pearson_p": 2.0244996435525392e-13,
+      "spearman": 0.5137315737853874,
+      "spearman_p": 5.050910609384223e-09,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "dko_gated",
+    "seed": 4444,
+    "test_metrics": {
+      "rmse": 1.6183827723773683,
+      "mae": 1.2250182628631592,
+      "r2": 0.35841917991638184,
+      "pearson": 0.6014018654823303,
+      "pearson_p": 1.488357601937227e-12,
+      "spearman": 0.5349115541658642,
+      "spearman_p": 8.743730497783748e-10,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "dko_gated",
+    "seed": 5555,
+    "test_metrics": {
+      "rmse": 1.6344817175952744,
+      "mae": 1.2718985080718994,
+      "r2": 0.34559136629104614,
+      "pearson": 0.591150164604187,
+      "pearson_p": 4.3775933817534956e-12,
+      "spearman": 0.5258988347823232,
+      "spearman_p": 1.871630484045778e-09,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "dko_invariants",
+    "seed": 42,
+    "test_metrics": {
+      "rmse": 1.653177470364237,
+      "mae": 1.2881642580032349,
+      "r2": 0.33053505420684814,
+      "pearson": 0.5769252777099609,
+      "pearson_p": 1.8394541113532537e-11,
+      "spearman": 0.5184268617744229,
+      "spearman_p": 3.459385951757978e-09,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "dko_invariants",
+    "seed": 123,
+    "test_metrics": {
+      "rmse": 1.746567834589004,
+      "mae": 1.3193522691726685,
+      "r2": 0.2527605891227722,
+      "pearson": 0.5184725522994995,
+      "pearson_p": 3.4465709242986794e-09,
+      "spearman": 0.463641794718464,
+      "spearman_p": 2.0466577073452288e-07,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "dko_invariants",
+    "seed": 456,
+    "test_metrics": {
+      "rmse": 1.6099140782856334,
+      "mae": 1.2359991073608398,
+      "r2": 0.3651161789894104,
+      "pearson": 0.6107757091522217,
+      "pearson_p": 5.363572581641778e-13,
+      "spearman": 0.5246125401595968,
+      "spearman_p": 2.0826079264877897e-09,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "dko_invariants",
+    "seed": 789,
+    "test_metrics": {
+      "rmse": 1.637024115797851,
+      "mae": 1.286684513092041,
+      "r2": 0.3435540199279785,
+      "pearson": 0.6027761697769165,
+      "pearson_p": 1.2841695542552807e-12,
+      "spearman": 0.5018095070974483,
+      "spearman_p": 1.287435467813992e-08,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "dko_invariants",
+    "seed": 1000,
+    "test_metrics": {
+      "rmse": 1.6875973426152346,
+      "mae": 1.3025482892990112,
+      "r2": 0.30236780643463135,
+      "pearson": 0.5707904100418091,
+      "pearson_p": 3.3452903180241725e-11,
+      "spearman": 0.525839499421555,
+      "spearman_p": 1.8808933618496253e-09,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "dko_invariants",
+    "seed": 1111,
+    "test_metrics": {
+      "rmse": 1.7077316837437049,
+      "mae": 1.3127570152282715,
+      "r2": 0.28562188148498535,
+      "pearson": 0.5442122220993042,
+      "pearson_p": 3.8928060926938213e-10,
+      "spearman": 0.4933168622499352,
+      "spearman_p": 2.4538422615130536e-08,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "dko_invariants",
+    "seed": 2222,
+    "test_metrics": {
+      "rmse": 1.6055126323410887,
+      "mae": 1.2484101057052612,
+      "r2": 0.36858296394348145,
+      "pearson": 0.626874566078186,
+      "pearson_p": 8.573924613507658e-14,
+      "spearman": 0.4984749874519102,
+      "spearman_p": 1.6619634499330583e-08,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "dko_invariants",
+    "seed": 3333,
+    "test_metrics": {
+      "rmse": 1.6541882764171858,
+      "mae": 1.2789386510849,
+      "r2": 0.32971614599227905,
+      "pearson": 0.5850300788879395,
+      "pearson_p": 8.187924167015482e-12,
+      "spearman": 0.49519404247860344,
+      "spearman_p": 2.1310050647299233e-08,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "dko_invariants",
+    "seed": 4444,
+    "test_metrics": {
+      "rmse": 1.639430310461194,
+      "mae": 1.2933493852615356,
+      "r2": 0.3416227698326111,
+      "pearson": 0.5861331224441528,
+      "pearson_p": 7.321170242327622e-12,
+      "spearman": 0.5112598931149958,
+      "spearman_p": 6.150376210428177e-09,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "dko_invariants",
+    "seed": 5555,
+    "test_metrics": {
+      "rmse": 1.636005473796949,
+      "mae": 1.2432576417922974,
+      "r2": 0.34437066316604614,
+      "pearson": 0.5991864800453186,
+      "pearson_p": 1.8852400254118565e-12,
+      "spearman": 0.5346386682630312,
+      "spearman_p": 8.950502827981038e-10,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "attention",
+    "seed": 42,
+    "test_metrics": {
+      "rmse": 1.8652249161245766,
+      "mae": 1.3943572044372559,
+      "r2": 0.1477808952331543,
+      "pearson": 0.42504528164863586,
+      "pearson_p": 2.432029071767606e-06,
+      "spearman": 0.47666492510767844,
+      "spearman_p": 8.269632013900675e-08,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "attention",
+    "seed": 123,
+    "test_metrics": {
+      "rmse": 1.8418117615633143,
+      "mae": 1.4230083227157593,
+      "r2": 0.1690414547920227,
+      "pearson": 0.4201701879501343,
+      "pearson_p": 3.255107335770574e-06,
+      "spearman": 0.4230487276518586,
+      "spearman_p": 2.7419130341476607e-06,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "attention",
+    "seed": 456,
+    "test_metrics": {
+      "rmse": 1.7447745782575226,
+      "mae": 1.3537065982818604,
+      "r2": 0.25429415702819824,
+      "pearson": 0.5062656998634338,
+      "pearson_p": 9.113018354776853e-09,
+      "spearman": 0.47947169537787665,
+      "spearman_p": 6.768683365984307e-08,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "attention",
+    "seed": 789,
+    "test_metrics": {
+      "rmse": 1.7184769153393005,
+      "mae": 1.3196742534637451,
+      "r2": 0.27660369873046875,
+      "pearson": 0.5264860391616821,
+      "pearson_p": 1.7822941792651278e-09,
+      "spearman": 0.4866202516937494,
+      "spearman_p": 4.0310501321286644e-08,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "attention",
+    "seed": 1000,
+    "test_metrics": {
+      "rmse": 1.8805452363735797,
+      "mae": 1.3616530895233154,
+      "r2": 0.1337236762046814,
+      "pearson": 0.409675657749176,
+      "pearson_p": 6.004463584681631e-06,
+      "spearman": 0.4008618769445779,
+      "spearman_p": 9.884895848804771e-06,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "attention",
+    "seed": 1111,
+    "test_metrics": {
+      "rmse": 1.7751594955351542,
+      "mae": 1.3191039562225342,
+      "r2": 0.22809535264968872,
+      "pearson": 0.4900027811527252,
+      "pearson_p": 3.1412953328145394e-08,
+      "spearman": 0.4763328108765728,
+      "spearman_p": 8.466950048679689e-08,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "attention",
+    "seed": 2222,
+    "test_metrics": {
+      "rmse": 1.8202811962923309,
+      "mae": 1.3496465682983398,
+      "r2": 0.18835556507110596,
+      "pearson": 0.451678991317749,
+      "pearson_p": 4.554644920981663e-07,
+      "spearman": 0.443935472649567,
+      "spearman_p": 7.522781145891029e-07,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "attention",
+    "seed": 3333,
+    "test_metrics": {
+      "rmse": 1.8678019003577715,
+      "mae": 1.3790901899337769,
+      "r2": 0.14542442560195923,
+      "pearson": 0.46781474351882935,
+      "pearson_p": 1.5371421657686545e-07,
+      "spearman": 0.48410104374560614,
+      "spearman_p": 4.845373365970661e-08,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "attention",
+    "seed": 4444,
+    "test_metrics": {
+      "rmse": 1.8167321353746348,
+      "mae": 1.338219404220581,
+      "r2": 0.1915174126625061,
+      "pearson": 0.47330671548843384,
+      "pearson_p": 1.0484342991765112e-07,
+      "spearman": 0.46856862818108963,
+      "spearman_p": 1.4590610819647298e-07,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "esol",
+    "model": "attention",
+    "seed": 5555,
+    "test_metrics": {
+      "rmse": 1.841793638774662,
+      "mae": 1.4032418727874756,
+      "r2": 0.16905778646469116,
+      "pearson": 0.4258140027523041,
+      "pearson_p": 2.321796446619618e-06,
+      "spearman": 0.42056597126566597,
+      "spearman_p": 3.1795161008857535e-06,
+      "n_samples": 114
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "lipophilicity",
+    "model": "dko_invariants",
+    "seed": 1111,
+    "test_metrics": {
+      "rmse": 1.1326101188090445,
+      "mae": 0.9097449779510498,
+      "r2": 0.05428546667098999,
+      "pearson": 0.2542780637741089,
+      "pearson_p": 1.27296434404318e-07,
+      "spearman": 0.21775631515130142,
+      "spearman_p": 6.683333602988876e-06,
+      "n_samples": 420
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "lipophilicity",
+    "model": "dko_invariants",
+    "seed": 2222,
+    "test_metrics": {
+      "rmse": 1.148095735312978,
+      "mae": 0.9261988997459412,
+      "r2": 0.028248071670532227,
+      "pearson": 0.20617873966693878,
+      "pearson_p": 2.0565893929218253e-05,
+      "spearman": 0.1460980468934019,
+      "spearman_p": 0.002688160954467409,
+      "n_samples": 420
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "lipophilicity",
+    "model": "dko_invariants",
+    "seed": 3333,
+    "test_metrics": {
+      "rmse": 1.1683516369164515,
+      "mae": 0.9184659123420715,
+      "r2": -0.006343722343444824,
+      "pearson": 0.1539076268672943,
+      "pearson_p": 0.0015581064747534094,
+      "spearman": 0.15168178857004996,
+      "spearman_p": 0.001824889989751996,
+      "n_samples": 420
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "lipophilicity",
+    "model": "dko_invariants",
+    "seed": 4444,
+    "test_metrics": {
+      "rmse": 1.218049655108851,
+      "mae": 0.9470078349113464,
+      "r2": -0.09377801418304443,
+      "pearson": 0.037027984857559204,
+      "pearson_p": 0.44914256840547745,
+      "spearman": 0.06451661302548187,
+      "spearman_p": 0.18695799524636528,
+      "n_samples": 420
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "lipophilicity",
+    "model": "dko_invariants",
+    "seed": 5555,
+    "test_metrics": {
+      "rmse": 1.1245969474187971,
+      "mae": 0.904830813407898,
+      "r2": 0.06761986017227173,
+      "pearson": 0.27300238609313965,
+      "pearson_p": 1.2960335237338669e-08,
+      "spearman": 0.17842607562019097,
+      "spearman_p": 0.0002375865689812709,
+      "n_samples": 420
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "lipophilicity",
+    "model": "attention",
+    "seed": 42,
+    "test_metrics": {
+      "rmse": 1.1292520277314626,
+      "mae": 0.8968748450279236,
+      "r2": 0.05988508462905884,
+      "pearson": 0.24572566151618958,
+      "pearson_p": 3.409835463978625e-07,
+      "spearman": 0.24691493216630833,
+      "spearman_p": 2.9796240978481335e-07,
+      "n_samples": 420
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "lipophilicity",
+    "model": "attention",
+    "seed": 123,
+    "test_metrics": {
+      "rmse": 1.167784507279183,
+      "mae": 0.9413831233978271,
+      "r2": -0.0053670406341552734,
+      "pearson": 0.1330438107252121,
+      "pearson_p": 0.006321749108974916,
+      "spearman": 0.13872954209640412,
+      "spearman_p": 0.004393663420429478,
+      "n_samples": 420
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "lipophilicity",
+    "model": "attention",
+    "seed": 456,
+    "test_metrics": {
+      "rmse": 1.1401082788877996,
+      "mae": 0.9210466146469116,
+      "r2": 0.04172229766845703,
+      "pearson": 0.22912439703941345,
+      "pearson_p": 2.0858068378187015e-06,
+      "spearman": 0.1837080909340225,
+      "spearman_p": 0.00015312590673587626,
+      "n_samples": 420
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "lipophilicity",
+    "model": "attention",
+    "seed": 789,
+    "test_metrics": {
+      "rmse": 1.1389773238874574,
+      "mae": 0.9242150187492371,
+      "r2": 0.04362243413925171,
+      "pearson": 0.24858279526233673,
+      "pearson_p": 2.4632691738106837e-07,
+      "spearman": 0.20824416081271205,
+      "spearman_p": 1.69055244067464e-05,
+      "n_samples": 420
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "lipophilicity",
+    "model": "attention",
+    "seed": 1000,
+    "test_metrics": {
+      "rmse": 1.157031748666598,
+      "mae": 0.9032437205314636,
+      "r2": 0.01306229829788208,
+      "pearson": 0.21312296390533447,
+      "pearson_p": 1.0557982104356364e-05,
+      "spearman": 0.16441234456520368,
+      "spearman_p": 0.000718412789047065,
+      "n_samples": 420
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "lipophilicity",
+    "model": "attention",
+    "seed": 1111,
+    "test_metrics": {
+      "rmse": 1.1345435760757316,
+      "mae": 0.9014140367507935,
+      "r2": 0.05105382204055786,
+      "pearson": 0.23047839105129242,
+      "pearson_p": 1.8083185712494788e-06,
+      "spearman": 0.228187558121329,
+      "spearman_p": 2.30118881436446e-06,
+      "n_samples": 420
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "lipophilicity",
+    "model": "attention",
+    "seed": 2222,
+    "test_metrics": {
+      "rmse": 1.1426688916271126,
+      "mae": 0.9073183536529541,
+      "r2": 0.037412941455841064,
+      "pearson": 0.19891870021820068,
+      "pearson_p": 4.033175940583276e-05,
+      "spearman": 0.16088200572671899,
+      "spearman_p": 0.0009367910568630189,
+      "n_samples": 420
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "lipophilicity",
+    "model": "attention",
+    "seed": 3333,
+    "test_metrics": {
+      "rmse": 1.1368675527805812,
+      "mae": 0.9119696021080017,
+      "r2": 0.04716229438781738,
+      "pearson": 0.23079299926757812,
+      "pearson_p": 1.7491030381814543e-06,
+      "spearman": 0.2052466405360274,
+      "spearman_p": 2.245358729183711e-05,
+      "n_samples": 420
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "lipophilicity",
+    "model": "attention",
+    "seed": 4444,
+    "test_metrics": {
+      "rmse": 1.1345742568205075,
+      "mae": 0.8917511105537415,
+      "r2": 0.05100250244140625,
+      "pearson": 0.2392115741968155,
+      "pearson_p": 7.050808579932872e-07,
+      "spearman": 0.21850733031403932,
+      "spearman_p": 6.2000603437603315e-06,
+      "n_samples": 420
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "lipophilicity",
+    "model": "attention",
+    "seed": 5555,
+    "test_metrics": {
+      "rmse": 1.1483988333699815,
+      "mae": 0.9245051741600037,
+      "r2": 0.02773493528366089,
+      "pearson": 0.18829786777496338,
+      "pearson_p": 0.00010349900245470177,
+      "spearman": 0.1701151809224963,
+      "spearman_p": 0.0004626671055256833,
+      "n_samples": 420
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "dko_gated",
+    "seed": 42,
+    "test_metrics": {
+      "rmse": 0.03757540707117458,
+      "mae": 0.02997763268649578,
+      "r2": 0.42943906784057617,
+      "pearson": 0.6611394286155701,
+      "pearson_p": 4.676266494836859e-121,
+      "spearman": 0.6571128833814783,
+      "spearman_p": 4.119527093765841e-119,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "dko_gated",
+    "seed": 123,
+    "test_metrics": {
+      "rmse": 0.03774115808504805,
+      "mae": 0.030521301552653313,
+      "r2": 0.42439430952072144,
+      "pearson": 0.6599454283714294,
+      "pearson_p": 1.7773480956138716e-120,
+      "spearman": 0.6535999785957607,
+      "spearman_p": 1.9379717506022202e-117,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "dko_gated",
+    "seed": 456,
+    "test_metrics": {
+      "rmse": 0.03791214955871003,
+      "mae": 0.03006668947637081,
+      "r2": 0.4191667437553406,
+      "pearson": 0.6564381718635559,
+      "pearson_p": 8.666628648871746e-119,
+      "spearman": 0.6501607045136902,
+      "spearman_p": 8.003444746169388e-116,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "dko_gated",
+    "seed": 789,
+    "test_metrics": {
+      "rmse": 0.037561244176779564,
+      "mae": 0.030515968799591064,
+      "r2": 0.42986905574798584,
+      "pearson": 0.664029061794281,
+      "pearson_p": 1.8006384119437443e-122,
+      "spearman": 0.659883743950145,
+      "spearman_p": 1.9040854692078837e-120,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "dko_gated",
+    "seed": 1000,
+    "test_metrics": {
+      "rmse": 0.03902777529092179,
+      "mae": 0.031399551779031754,
+      "r2": 0.3844798803329468,
+      "pearson": 0.6228042840957642,
+      "pearson_p": 1.1043044228508063e-103,
+      "spearman": 0.610724542551666,
+      "spearman_p": 1.0685208540915963e-98,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "dko_gated",
+    "seed": 1111,
+    "test_metrics": {
+      "rmse": 0.0382686627139436,
+      "mae": 0.03068200871348381,
+      "r2": 0.408191442489624,
+      "pearson": 0.644307017326355,
+      "pearson_p": 4.034449815298999e-113,
+      "spearman": 0.6387841127770214,
+      "spearman_p": 1.2640980296933855e-110,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "dko_gated",
+    "seed": 2222,
+    "test_metrics": {
+      "rmse": 0.03789889734457495,
+      "mae": 0.030544817447662354,
+      "r2": 0.41957271099090576,
+      "pearson": 0.6526533365249634,
+      "pearson_p": 5.4228734388810735e-117,
+      "spearman": 0.6524960255631754,
+      "spearman_p": 6.431847214581322e-117,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "dko_gated",
+    "seed": 3333,
+    "test_metrics": {
+      "rmse": 0.03759052004528354,
+      "mae": 0.030140340328216553,
+      "r2": 0.42897993326187134,
+      "pearson": 0.6585758328437805,
+      "pearson_p": 8.16039764181517e-120,
+      "spearman": 0.6558067125181659,
+      "spearman_p": 1.7351541920109804e-118,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "dko_gated",
+    "seed": 4444,
+    "test_metrics": {
+      "rmse": 0.03872308495256432,
+      "mae": 0.030807873234152794,
+      "r2": 0.3940531015396118,
+      "pearson": 0.6327739357948303,
+      "pearson_p": 5.760468367877912e-108,
+      "spearman": 0.6225386590045048,
+      "spearman_p": 1.4291456654319957e-103,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "dko_gated",
+    "seed": 5555,
+    "test_metrics": {
+      "rmse": 0.03811649478271958,
+      "mae": 0.030022364109754562,
+      "r2": 0.4128885269165039,
+      "pearson": 0.6447494626045227,
+      "pearson_p": 2.5328926585085645e-113,
+      "spearman": 0.6488920017139169,
+      "spearman_p": 3.119445373651603e-115,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "dko_invariants",
+    "seed": 42,
+    "test_metrics": {
+      "rmse": 0.0385195323348154,
+      "mae": 0.030576426535844803,
+      "r2": 0.4004068374633789,
+      "pearson": 0.6508936285972595,
+      "pearson_p": 3.6362369162588404e-116,
+      "spearman": 0.6415543246195187,
+      "spearman_p": 7.182136141926896e-112,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "dko_invariants",
+    "seed": 123,
+    "test_metrics": {
+      "rmse": 0.03828619917679065,
+      "mae": 0.031161939725279808,
+      "r2": 0.4076489806175232,
+      "pearson": 0.642175555229187,
+      "pearson_p": 3.7598417411261903e-112,
+      "spearman": 0.6374388171036945,
+      "spearman_p": 5.035383024373413e-110,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "dko_invariants",
+    "seed": 456,
+    "test_metrics": {
+      "rmse": 0.038307576651445616,
+      "mae": 0.030574848875403404,
+      "r2": 0.4069872498512268,
+      "pearson": 0.6444269418716431,
+      "pearson_p": 3.5564168357178265e-113,
+      "spearman": 0.6378484858411341,
+      "spearman_p": 3.3079689614689305e-110,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "dko_invariants",
+    "seed": 789,
+    "test_metrics": {
+      "rmse": 0.037443788999357464,
+      "mae": 0.02988939732313156,
+      "r2": 0.43342912197113037,
+      "pearson": 0.6615968346595764,
+      "pearson_p": 2.799676213786755e-121,
+      "spearman": 0.6525736138695162,
+      "spearman_p": 5.9127682020916594e-117,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "dko_invariants",
+    "seed": 1000,
+    "test_metrics": {
+      "rmse": 0.037647633652517117,
+      "mae": 0.030271967872977257,
+      "r2": 0.42724353075027466,
+      "pearson": 0.654641330242157,
+      "pearson_p": 6.221064711331987e-118,
+      "spearman": 0.6524050270532497,
+      "spearman_p": 7.098771655848756e-117,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "dko_invariants",
+    "seed": 1111,
+    "test_metrics": {
+      "rmse": 0.03721409846943295,
+      "mae": 0.03007437102496624,
+      "r2": 0.44035881757736206,
+      "pearson": 0.6688633561134338,
+      "pearson_p": 7.134516476346856e-125,
+      "spearman": 0.6626222123037299,
+      "spearman_p": 8.832432272689136e-122,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "attention",
+    "seed": 42,
+    "test_metrics": {
+      "rmse": 0.03719430697124953,
+      "mae": 0.0293375626206398,
+      "r2": 0.44095391035079956,
+      "pearson": 0.6676038503646851,
+      "pearson_p": 3.0446360213312695e-124,
+      "spearman": 0.6547732006771708,
+      "spearman_p": 5.385985766732811e-118,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "attention",
+    "seed": 123,
+    "test_metrics": {
+      "rmse": 0.036557081225483755,
+      "mae": 0.028440142050385475,
+      "r2": 0.4599453806877136,
+      "pearson": 0.6856697797775269,
+      "pearson_p": 1.3716539478691276e-133,
+      "spearman": 0.6808447109113949,
+      "spearman_p": 5.007020691932445e-131,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "attention",
+    "seed": 456,
+    "test_metrics": {
+      "rmse": 0.03571417941030792,
+      "mae": 0.027567030861973763,
+      "r2": 0.4845625162124634,
+      "pearson": 0.7035052180290222,
+      "pearson_p": 1.6436305635260346e-143,
+      "spearman": 0.6871112462389223,
+      "spearman_p": 2.301660427537133e-134,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "attention",
+    "seed": 789,
+    "test_metrics": {
+      "rmse": 0.03543293213628758,
+      "mae": 0.02789122611284256,
+      "r2": 0.4926486015319824,
+      "pearson": 0.7028108239173889,
+      "pearson_p": 4.130667427454451e-143,
+      "spearman": 0.6779110444800753,
+      "spearman_p": 1.7118066212130658e-129,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "attention",
+    "seed": 1000,
+    "test_metrics": {
+      "rmse": 0.035949418822915906,
+      "mae": 0.02795027568936348,
+      "r2": 0.4777500033378601,
+      "pearson": 0.6929654479026794,
+      "pearson_p": 1.4675290845758462e-137,
+      "spearman": 0.6691178672470408,
+      "spearman_p": 5.316325515750654e-125,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "attention",
+    "seed": 1111,
+    "test_metrics": {
+      "rmse": 0.03554525168610839,
+      "mae": 0.02773163840174675,
+      "r2": 0.48942697048187256,
+      "pearson": 0.7044992446899414,
+      "pearson_p": 4.375130082639858e-144,
+      "spearman": 0.6835172104045005,
+      "spearman_p": 1.9342045354834487e-132,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "attention",
+    "seed": 2222,
+    "test_metrics": {
+      "rmse": 0.0368825732754458,
+      "mae": 0.029012512415647507,
+      "r2": 0.4502856731414795,
+      "pearson": 0.6730221509933472,
+      "pearson_p": 5.626574810259584e-127,
+      "spearman": 0.6674065926058866,
+      "spearman_p": 3.819039660695322e-124,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "attention",
+    "seed": 3333,
+    "test_metrics": {
+      "rmse": 0.03683154986151199,
+      "mae": 0.02800564281642437,
+      "r2": 0.4518055319786072,
+      "pearson": 0.6872226595878601,
+      "pearson_p": 2.0040279561278522e-134,
+      "spearman": 0.6805664932145995,
+      "spearman_p": 7.011621661027809e-131,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "attention",
+    "seed": 4444,
+    "test_metrics": {
+      "rmse": 0.03678596101623682,
+      "mae": 0.0286196768283844,
+      "r2": 0.4531617760658264,
+      "pearson": 0.6746885180473328,
+      "pearson_p": 7.90378094527214e-128,
+      "spearman": 0.657718367851574,
+      "spearman_p": 2.1100856406131374e-119,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  },
+  {
+    "dataset": "qm9_gap",
+    "model": "attention",
+    "seed": 5555,
+    "test_metrics": {
+      "rmse": 0.03620975588647332,
+      "mae": 0.028132889419794083,
+      "r2": 0.4701586365699768,
+      "pearson": 0.6933739185333252,
+      "pearson_p": 8.725615671766163e-138,
+      "spearman": 0.6777308891578333,
+      "spearman_p": 2.1235688202026623e-129,
+      "n_samples": 955
+    },
+    "best_epoch": -1,
+    "best_val_loss": -1
+  }
+]

@@ -1,0 +1,212 @@
+{
+  "timestamp": "2026-02-27T02:17:56.019619",
+  "config": {
+    "datasets": [
+      "esol",
+      "freesolv",
+      "lipophilicity",
+      "qm9_gap"
+    ],
+    "seeds": [
+      42,
+      123,
+      456
+    ],
+    "architecture": "MLP: input -> 512 -> 256 -> 128 -> 1",
+    "input_features": "FP(2048) + mu(256) + sigma(5) = 2309"
+  },
+  "raw_results": [
+    {
+      "dataset": "esol",
+      "method": "hybrid_mlp",
+      "seed": 42,
+      "rmse": 1.2277011639696336,
+      "mae": 1.017640182585047,
+      "r2": 0.6307893054648488
+    },
+    {
+      "dataset": "esol",
+      "method": "hybrid_xgb",
+      "seed": 42,
+      "rmse": 1.3792697554025979,
+      "mae": 1.0775005115500669,
+      "r2": 0.5339984416709447
+    },
+    {
+      "dataset": "esol",
+      "method": "hybrid_mlp",
+      "seed": 123,
+      "rmse": 1.2479529610033449,
+      "mae": 1.030172652058434,
+      "r2": 0.6185080582847433
+    },
+    {
+      "dataset": "esol",
+      "method": "hybrid_xgb",
+      "seed": 123,
+      "rmse": 1.3509102711797658,
+      "mae": 1.0700422007744772,
+      "r2": 0.5529645643728013
+    },
+    {
+      "dataset": "esol",
+      "method": "hybrid_mlp",
+      "seed": 456,
+      "rmse": 1.1772545312990608,
+      "mae": 0.953543567343762,
+      "r2": 0.6605078953951091
+    },
+    {
+      "dataset": "esol",
+      "method": "hybrid_xgb",
+      "seed": 456,
+      "rmse": 1.3439777064815803,
+      "mae": 1.0704159891061618,
+      "r2": 0.5575409603064242
+    },
+    {
+      "dataset": "freesolv",
+      "method": "hybrid_mlp",
+      "seed": 42,
+      "rmse": 3.7926601711910624,
+      "mae": 2.767251743376255,
+      "r2": -0.03497269819827853
+    },
+    {
+      "dataset": "freesolv",
+      "method": "hybrid_xgb",
+      "seed": 42,
+      "rmse": 3.1113891668950964,
+      "mae": 2.5045935986258763,
+      "r2": 0.30345417066644864
+    },
+    {
+      "dataset": "freesolv",
+      "method": "hybrid_mlp",
+      "seed": 123,
+      "rmse": 3.851589771050394,
+      "mae": 2.7871746235781094,
+      "r2": -0.06738496480703882
+    },
+    {
+      "dataset": "freesolv",
+      "method": "hybrid_xgb",
+      "seed": 123,
+      "rmse": 2.6458843878536817,
+      "mae": 2.0508491285497494,
+      "r2": 0.49628747128263373
+    },
+    {
+      "dataset": "freesolv",
+      "method": "hybrid_mlp",
+      "seed": 456,
+      "rmse": 3.782248291619318,
+      "mae": 2.7284953400492666,
+      "r2": -0.029297937437674948
+    },
+    {
+      "dataset": "freesolv",
+      "method": "hybrid_xgb",
+      "seed": 456,
+      "rmse": 2.7140590244122613,
+      "mae": 2.1326359777450565,
+      "r2": 0.4699954447636606
+    },
+    {
+      "dataset": "lipophilicity",
+      "method": "hybrid_mlp",
+      "seed": 42,
+      "rmse": 0.9048578098776885,
+      "mae": 0.6913868260569871,
+      "r2": 0.3963851826028473
+    },
+    {
+      "dataset": "lipophilicity",
+      "method": "hybrid_xgb",
+      "seed": 42,
+      "rmse": 0.9556695182330053,
+      "mae": 0.7429208066236405,
+      "r2": 0.3266905932803411
+    },
+    {
+      "dataset": "lipophilicity",
+      "method": "hybrid_mlp",
+      "seed": 123,
+      "rmse": 0.9036189531598411,
+      "mae": 0.6853691882719951,
+      "r2": 0.3980368904305339
+    },
+    {
+      "dataset": "lipophilicity",
+      "method": "hybrid_xgb",
+      "seed": 123,
+      "rmse": 0.9647005819337598,
+      "mae": 0.7564079183453606,
+      "r2": 0.3139049361219354
+    },
+    {
+      "dataset": "lipophilicity",
+      "method": "hybrid_mlp",
+      "seed": 456,
+      "rmse": 0.9100350051837307,
+      "mae": 0.7007919576772976,
+      "r2": 0.38945818967984736
+    },
+    {
+      "dataset": "lipophilicity",
+      "method": "hybrid_xgb",
+      "seed": 456,
+      "rmse": 0.9494991858280728,
+      "mae": 0.7367029753540245,
+      "r2": 0.3353570428332143
+    },
+    {
+      "dataset": "qm9_gap",
+      "method": "hybrid_mlp",
+      "seed": 42,
+      "rmse": 0.02311328697487527,
+      "mae": 0.016828933498622235,
+      "r2": 0.7841171801954486
+    },
+    {
+      "dataset": "qm9_gap",
+      "method": "hybrid_xgb",
+      "seed": 42,
+      "rmse": 0.021050996393531907,
+      "mae": 0.01542928194924799,
+      "r2": 0.8209229323203102
+    },
+    {
+      "dataset": "qm9_gap",
+      "method": "hybrid_mlp",
+      "seed": 123,
+      "rmse": 0.022680215486131337,
+      "mae": 0.01649283446878663,
+      "r2": 0.7921313421231537
+    },
+    {
+      "dataset": "qm9_gap",
+      "method": "hybrid_xgb",
+      "seed": 123,
+      "rmse": 0.020991711493375607,
+      "mae": 0.015427297329977547,
+      "r2": 0.8219301641319944
+    },
+    {
+      "dataset": "qm9_gap",
+      "method": "hybrid_mlp",
+      "seed": 456,
+      "rmse": 0.023071174103214527,
+      "mae": 0.016956183485959838,
+      "r2": 0.7849031491574754
+    },
+    {
+      "dataset": "qm9_gap",
+      "method": "hybrid_xgb",
+      "seed": 456,
+      "rmse": 0.021078989565480793,
+      "mae": 0.015399375203691853,
+      "r2": 0.8204463498249537
+    }
+  ]
+}

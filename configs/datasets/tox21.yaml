@@ -1,0 +1,65 @@
+# Tox21 dataset configuration
+# Toxicity prediction across 12 targets
+
+name: "Tox21"
+type: "classification"
+num_molecules: 7831
+task: "toxicity"
+metric: "auc"
+target_column: null  # Multi-task
+smiles_column: "smiles"
+
+description: |
+  Tox21 challenge dataset containing toxicity measurements across
+  12 different biological targets including nuclear receptors and
+  stress response pathways.
+
+property_type: "mixed"  # Some targets are conformationally dependent
+expected_dko_advantage: 0.02  # 1-3% improvement in mean AUC
+
+num_tasks: 12
+task_names:
+  - "NR-AR"       # Androgen receptor
+  - "NR-AR-LBD"   # AR ligand binding domain
+  - "NR-AhR"      # Aryl hydrocarbon receptor
+  - "NR-Aromatase"
+  - "NR-ER"       # Estrogen receptor
+  - "NR-ER-LBD"   # ER ligand binding domain
+  - "NR-PPAR-gamma"
+  - "SR-ARE"      # Antioxidant response element
+  - "SR-ATAD5"
+  - "SR-HSE"      # Heat shock response element
+  - "SR-MMP"      # Mitochondrial membrane potential
+  - "SR-p53"
+
+conformationally_dependent_tasks:
+  - "NR-AR"
+  - "NR-AR-LBD"
+  - "NR-ER"
+  - "NR-ER-LBD"
+  - "NR-PPAR-gamma"
+
+preprocessing:
+  standardize_smiles: true
+  remove_salts: true
+  handle_missing: "mask"  # Use task-specific masking
+
+data:
+  conformer_generation:
+    max_conformers: 30
+    energy_window: 12.0
+
+training:
+  base_learning_rate: 1.0e-4
+  batch_size: 128
+  max_epochs: 150
+  multi_task_strategy: "shared_trunk"
+
+evaluation:
+  per_task_metrics: true
+  aggregate_method: "mean"
+
+source:
+  paper: "Tox21 Challenge"
+  url: "https://tripod.nih.gov/tox21/challenge/"
+  license: "Public domain"

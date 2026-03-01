@@ -1,0 +1,57 @@
+# QM9 HOMO-LUMO gap dataset configuration
+# HOMO-LUMO gap energy prediction
+
+name: "QM9_Gap"
+type: "regression"
+num_molecules: 133885
+task: "homo_lumo_gap"
+metric: "mae"
+target_column: "gap"
+smiles_column: "smiles"
+unit: "eV"
+
+description: |
+  QM9 dataset containing DFT-calculated HOMO-LUMO gaps for small
+  organic molecules. The gap is related to molecular stability,
+  color/absorption, and conductivity.
+
+property_type: "conformationally_dependent"
+expected_dko_advantage: 0.05  # 4-6% improvement
+
+molecule_constraints:
+  max_heavy_atoms: 9
+  elements: ["C", "H", "O", "N", "F"]
+
+preprocessing:
+  standardize_smiles: true
+  use_3d_from_dataset: true
+
+conformational_notes: |
+  The HOMO-LUMO gap is highly sensitive to molecular geometry.
+  Conjugation length, dihedral angles, and overall shape all
+  affect the electronic gap.
+
+data:
+  conformer_generation:
+    use_dataset_geometries: true
+    generate_additional: true
+    max_conformers: 30
+    energy_window: 10.0
+
+training:
+  base_learning_rate: 5.0e-5
+  batch_size: 128
+  max_epochs: 500
+
+# Value statistics
+value_range:
+  min: 0.02
+  max: 0.6
+  mean: 0.25
+  std: 0.05
+  unit: "Hartree"
+
+source:
+  paper: "QM9 dataset"
+  url: "https://figshare.com/collections/Quantum_chemistry_structures_and_properties_of_134_kilo_molecules/978904"
+  license: "CC0"

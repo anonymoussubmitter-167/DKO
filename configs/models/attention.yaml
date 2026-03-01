@@ -1,0 +1,75 @@
+# Attention-based conformer aggregation model configuration
+# Baseline that uses attention to weight conformers
+
+name: "AttentionAggregation"
+description: |
+  Attention-based model for conformer aggregation. Uses self-attention
+  or cross-attention mechanisms to learn which conformers are most
+  relevant for property prediction.
+
+architecture:
+  feature_dim: null  # Set from data
+
+  # Feature encoder
+  encoder:
+    hidden_dims: [256, 128]
+    activation: "relu"
+    use_batch_norm: true
+    dropout: 0.1
+
+  # Attention mechanism
+  attention:
+    type: "multi_head"  # or "single_head", "additive"
+    num_heads: 4
+    head_dim: 32
+    dropout: 0.1
+    use_layer_norm: true
+
+    # Positional encoding for conformers
+    use_positional_encoding: false  # Conformers have no natural order
+
+    # Temperature for attention softmax
+    temperature: 1.0
+
+  # Aggregation after attention
+  aggregation:
+    method: "weighted_mean"  # or "weighted_sum", "max"
+
+  # Prediction head
+  prediction_head:
+    hidden_dims: [64, 32]
+    dropout: 0.1
+
+hyperparameter_search:
+  learning_rate:
+    type: "log_uniform"
+    low: 1.0e-5
+    high: 1.0e-3
+
+  num_heads:
+    type: "categorical"
+    choices: [1, 2, 4, 8]
+
+  head_dim:
+    type: "categorical"
+    choices: [16, 32, 64]
+
+  encoder_hidden_dims:
+    type: "categorical"
+    choices:
+      - [128]
+      - [256]
+      - [256, 128]
+      - [512, 256]
+
+  dropout:
+    type: "categorical"
+    choices: [0.0, 0.1, 0.2]
+
+  attention_temperature:
+    type: "uniform"
+    low: 0.5
+    high: 2.0
+
+training:
+  batch_size: 64

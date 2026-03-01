@@ -1,0 +1,592 @@
+{
+  "timestamp": "2026-02-21T02:43:07.550894",
+  "config": {
+    "models": [
+      "dko_gated",
+      "dko_invariants",
+      "attention"
+    ],
+    "datasets": [
+      "freesolv"
+    ],
+    "seeds": [
+      42,
+      123,
+      456,
+      789,
+      1000,
+      1111,
+      2222,
+      3333,
+      4444,
+      5555
+    ]
+  },
+  "raw_results": [
+    {
+      "dataset": "freesolv",
+      "model": "dko_gated",
+      "seed": 42,
+      "test_metrics": {
+        "rmse": 4.554427229444517,
+        "mae": 3.364677667617798,
+        "r2": -0.4924800395965576,
+        "pearson": 0.059454046189785004,
+        "pearson_p": 0.6663392715668766,
+        "spearman": 0.061583419106353614,
+        "spearman_p": 0.6551285083144813,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "dko_gated",
+      "seed": 123,
+      "test_metrics": {
+        "rmse": 4.3423341048928545,
+        "mae": 3.0384318828582764,
+        "r2": -0.3567115068435669,
+        "pearson": 0.10228325426578522,
+        "pearson_p": 0.45743213303358216,
+        "spearman": 0.14510164712697962,
+        "spearman_p": 0.29051515073849393,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "dko_gated",
+      "seed": 456,
+      "test_metrics": {
+        "rmse": 4.314595915614701,
+        "mae": 3.2264351844787598,
+        "r2": -0.33943378925323486,
+        "pearson": 0.17463469505310059,
+        "pearson_p": 0.2022372951835645,
+        "spearman": 0.19867597482055616,
+        "spearman_p": 0.1459136190976717,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "dko_gated",
+      "seed": 789,
+      "test_metrics": {
+        "rmse": 4.295147024709071,
+        "mae": 3.066885471343994,
+        "r2": -0.3273855447769165,
+        "pearson": 0.16002091765403748,
+        "pearson_p": 0.243199205207592,
+        "spearman": 0.18374010164537724,
+        "spearman_p": 0.1793305771294164,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "dko_gated",
+      "seed": 1000,
+      "test_metrics": {
+        "rmse": 4.428913243897724,
+        "mae": 3.2838220596313477,
+        "r2": -0.4113520383834839,
+        "pearson": 0.0650610402226448,
+        "pearson_p": 0.6369811035509345,
+        "spearman": 0.012663022909390814,
+        "spearman_p": 0.9268902489213756,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "dko_gated",
+      "seed": 1111,
+      "test_metrics": {
+        "rmse": 4.615961057171436,
+        "mae": 3.3508107662200928,
+        "r2": -0.5330816507339478,
+        "pearson": 0.091505266726017,
+        "pearson_p": 0.5064149329791932,
+        "spearman": 0.07958583629092915,
+        "spearman_p": 0.5635443478187059,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "dko_gated",
+      "seed": 2222,
+      "test_metrics": {
+        "rmse": 5.103482923318976,
+        "mae": 3.895102024078369,
+        "r2": -0.8740206956863403,
+        "pearson": -0.0359237939119339,
+        "pearson_p": 0.7945683445528149,
+        "spearman": 0.03264967445298771,
+        "spearman_p": 0.8129377046250625,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "dko_gated",
+      "seed": 3333,
+      "test_metrics": {
+        "rmse": 4.6626360835038785,
+        "mae": 3.6446332931518555,
+        "r2": -0.5642423629760742,
+        "pearson": 0.04867250472307205,
+        "pearson_p": 0.7241756701736917,
+        "spearman": 0.018940418881567455,
+        "spearman_p": 0.8908317564491246,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "dko_gated",
+      "seed": 4444,
+      "test_metrics": {
+        "rmse": 4.546375155421406,
+        "mae": 3.227112293243408,
+        "r2": -0.4872075319290161,
+        "pearson": 0.06957266479730606,
+        "pearson_p": 0.6137512706131407,
+        "spearman": 0.15560005073561986,
+        "spearman_p": 0.25663461428185025,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "dko_gated",
+      "seed": 5555,
+      "test_metrics": {
+        "rmse": 4.512414972661318,
+        "mae": 3.2534873485565186,
+        "r2": -0.46507251262664795,
+        "pearson": 0.1066645011305809,
+        "pearson_p": 0.4382858824864748,
+        "spearman": 0.13164493047398027,
+        "spearman_p": 0.3380332895199657,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "dko_invariants",
+      "seed": 42,
+      "test_metrics": {
+        "rmse": 4.404667130362619,
+        "mae": 3.1385838985443115,
+        "r2": -0.39594149589538574,
+        "pearson": 0.07940709590911865,
+        "pearson_p": 0.5644234567441395,
+        "spearman": 0.15091276436691997,
+        "spearman_p": 0.27141679575864525,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "dko_invariants",
+      "seed": 123,
+      "test_metrics": {
+        "rmse": 4.5014281655698065,
+        "mae": 3.182785749435425,
+        "r2": -0.45794677734375,
+        "pearson": 0.030014021322131157,
+        "pearson_p": 0.8277981532408317,
+        "spearman": 0.07258690055183566,
+        "spearman_p": 0.5984367555776694,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "dko_invariants",
+      "seed": 456,
+      "test_metrics": {
+        "rmse": 4.612527474008836,
+        "mae": 3.290451765060425,
+        "r2": -0.5308018922805786,
+        "pearson": 0.015693021938204765,
+        "pearson_p": 0.9094623937135958,
+        "spearman": 0.030773671059003884,
+        "spearman_p": 0.8235087423669368,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "dko_invariants",
+      "seed": 789,
+      "test_metrics": {
+        "rmse": 4.657938810962936,
+        "mae": 3.327407121658325,
+        "r2": -0.5610922574996948,
+        "pearson": 0.07072202116250992,
+        "pearson_p": 0.6078921487631699,
+        "spearman": 0.08362645898566354,
+        "spearman_p": 0.5438441945765206,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "dko_invariants",
+      "seed": 1000,
+      "test_metrics": {
+        "rmse": 4.71379607411529,
+        "mae": 3.443312168121338,
+        "r2": -0.5987575054168701,
+        "pearson": 0.05757550895214081,
+        "pearson_p": 0.6762906134365448,
+        "spearman": 0.08929215677937531,
+        "spearman_p": 0.5167940953414996,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "dko_invariants",
+      "seed": 1111,
+      "test_metrics": {
+        "rmse": 4.6312214015227,
+        "mae": 3.351508378982544,
+        "r2": -0.543235182762146,
+        "pearson": 0.04641013592481613,
+        "pearson_p": 0.7365223473615159,
+        "spearman": 0.11162220194203754,
+        "spearman_p": 0.41717129669691233,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "dko_invariants",
+      "seed": 2222,
+      "test_metrics": {
+        "rmse": 4.611328952244738,
+        "mae": 3.474931240081787,
+        "r2": -0.5300064086914062,
+        "pearson": 0.012445920147001743,
+        "pearson_p": 0.928140324236004,
+        "spearman": 0.000793693743608541,
+        "spearman_p": 0.9954114001098713,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "dko_invariants",
+      "seed": 3333,
+      "test_metrics": {
+        "rmse": 4.436642416169583,
+        "mae": 3.239475965499878,
+        "r2": -0.41628241539001465,
+        "pearson": 0.1157708391547203,
+        "pearson_p": 0.3999591703136276,
+        "spearman": 0.12464599473488677,
+        "spearman_p": 0.3645601648154493,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "dko_invariants",
+      "seed": 4444,
+      "test_metrics": {
+        "rmse": 4.570487359769256,
+        "mae": 3.3222999572753906,
+        "r2": -0.5030245780944824,
+        "pearson": 0.04498499259352684,
+        "pearson_p": 0.744333891495422,
+        "spearman": 0.07056658920446846,
+        "spearman_p": 0.6086829343977793,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "dko_invariants",
+      "seed": 5555,
+      "test_metrics": {
+        "rmse": 4.573089851222422,
+        "mae": 3.3437583446502686,
+        "r2": -0.5047365427017212,
+        "pearson": 0.10464145243167877,
+        "pearson_p": 0.4470706534786266,
+        "spearman": 0.10686003948038628,
+        "spearman_p": 0.43744211164149915,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "attention",
+      "seed": 42,
+      "test_metrics": {
+        "rmse": 3.8707078111962625,
+        "mae": 2.8695220947265625,
+        "r2": -0.07800757884979248,
+        "pearson": 0.2741548717021942,
+        "pearson_p": 0.04281846659613474,
+        "spearman": 0.2920071436712514,
+        "spearman_p": 0.03052337183431877,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "attention",
+      "seed": 123,
+      "test_metrics": {
+        "rmse": 4.533558645446115,
+        "mae": 3.514855146408081,
+        "r2": -0.47883427143096924,
+        "pearson": 0.15748640894889832,
+        "pearson_p": 0.2508417795043322,
+        "spearman": 0.1853274891325943,
+        "spearman_p": 0.1755371953545966,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "attention",
+      "seed": 456,
+      "test_metrics": {
+        "rmse": 3.744491855184097,
+        "mae": 2.6750664710998535,
+        "r2": -0.008850455284118652,
+        "pearson": 0.16867978870868683,
+        "pearson_p": 0.21829522077911043,
+        "spearman": 0.18392048658710644,
+        "spearman_p": 0.17889655404781604,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "attention",
+      "seed": 789,
+      "test_metrics": {
+        "rmse": 3.9359941782094188,
+        "mae": 3.1148955821990967,
+        "r2": -0.11467921733856201,
+        "pearson": 0.19299724698066711,
+        "pearson_p": 0.15802584946599776,
+        "spearman": 0.19827912794875185,
+        "spearman_p": 0.1467369327579091,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "attention",
+      "seed": 1000,
+      "test_metrics": {
+        "rmse": 3.9010069794209814,
+        "mae": 3.1639151573181152,
+        "r2": -0.09495043754577637,
+        "pearson": 0.28180670738220215,
+        "pearson_p": 0.03712550059257289,
+        "spearman": 0.27054133560547494,
+        "spearman_p": 0.04574604567742402,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "attention",
+      "seed": 1111,
+      "test_metrics": {
+        "rmse": 3.888831770946721,
+        "mae": 2.721520185470581,
+        "r2": -0.08812642097473145,
+        "pearson": 0.1487545669078827,
+        "pearson_p": 0.2784097033226557,
+        "spearman": 0.14138571732735783,
+        "spearman_p": 0.30317704286702435,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "attention",
+      "seed": 2222,
+      "test_metrics": {
+        "rmse": 4.080779983538423,
+        "mae": 3.139617919921875,
+        "r2": -0.19819462299346924,
+        "pearson": 0.2425498068332672,
+        "pearson_p": 0.07438646520888068,
+        "spearman": 0.20423183102581594,
+        "spearman_p": 0.13474515240071214,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "attention",
+      "seed": 3333,
+      "test_metrics": {
+        "rmse": 3.7590704257839356,
+        "mae": 2.6705424785614014,
+        "r2": -0.016721367835998535,
+        "pearson": 0.09004266560077667,
+        "pearson_p": 0.5132621887102312,
+        "spearman": 0.07742121699017859,
+        "spearman_p": 0.5742335885002803,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "attention",
+      "seed": 4444,
+      "test_metrics": {
+        "rmse": 3.845850920852227,
+        "mae": 3.0136196613311768,
+        "r2": -0.06420648097991943,
+        "pearson": 0.28803524374961853,
+        "pearson_p": 0.03296712305655349,
+        "spearman": 0.2842505911768952,
+        "spearman_p": 0.03544494583462473,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    },
+    {
+      "dataset": "freesolv",
+      "model": "attention",
+      "seed": 5555,
+      "test_metrics": {
+        "rmse": 3.6622096340442507,
+        "mae": 2.8020403385162354,
+        "r2": 0.034999728202819824,
+        "pearson": 0.2707526683807373,
+        "pearson_p": 0.04557043735198784,
+        "spearman": 0.22829518225249307,
+        "spearman_p": 0.09365729844154226,
+        "n_samples": 55
+      },
+      "best_epoch": -1,
+      "best_val_loss": -1
+    }
+  ],
+  "statistics": {
+    "freesolv_dko_gated": {
+      "rmse_mean": 4.537628771063589,
+      "rmse_std": 0.2239304008648179,
+      "rmse_values": [
+        4.554427229444517,
+        4.3423341048928545,
+        4.314595915614701,
+        4.295147024709071,
+        4.428913243897724,
+        4.615961057171436,
+        5.103482923318976,
+        4.6626360835038785,
+        4.546375155421406,
+        4.512414972661318
+      ],
+      "n_seeds": 10
+    },
+    "freesolv_dko_invariants": {
+      "rmse_mean": 4.571312763594818,
+      "rmse_std": 0.09246032900139972,
+      "rmse_values": [
+        4.404667130362619,
+        4.5014281655698065,
+        4.612527474008836,
+        4.657938810962936,
+        4.71379607411529,
+        4.6312214015227,
+        4.611328952244738,
+        4.436642416169583,
+        4.570487359769256,
+        4.573089851222422
+      ],
+      "n_seeds": 10
+    },
+    "freesolv_attention": {
+      "rmse_mean": 3.9222502204622436,
+      "rmse_std": 0.23128486807524545,
+      "rmse_values": [
+        3.8707078111962625,
+        4.533558645446115,
+        3.744491855184097,
+        3.9359941782094188,
+        3.9010069794209814,
+        3.888831770946721,
+        4.080779983538423,
+        3.7590704257839356,
+        3.845850920852227,
+        3.6622096340442507
+      ],
+      "n_seeds": 10
+    },
+    "freesolv_dko_gated_vs_attention": {
+      "t_statistic": 5.734626200071315,
+      "p_value": 1.9572831690714597e-05,
+      "significant_0.05": 

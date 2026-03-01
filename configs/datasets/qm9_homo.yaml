@@ -1,0 +1,66 @@
+# QM9 HOMO energy dataset configuration
+# Highest Occupied Molecular Orbital energy prediction
+
+name: "QM9_HOMO"
+type: "regression"
+num_molecules: 133885
+task: "homo_energy"
+metric: "mae"  # MAE in eV is standard for QM properties
+target_column: "homo"
+smiles_column: "smiles"
+unit: "eV"
+
+description: |
+  QM9 dataset containing DFT-calculated HOMO energies for small
+  organic molecules. HOMO energy is related to ionization potential
+  and electron-donating ability.
+
+property_type: "conformationally_dependent"
+expected_dko_advantage: 0.05  # 4-6% improvement
+
+# QM9 molecular constraints
+molecule_constraints:
+  max_heavy_atoms: 9
+  elements: ["C", "H", "O", "N", "F"]
+  exclude_charged: true
+
+preprocessing:
+  standardize_smiles: true
+  use_3d_from_dataset: true  # QM9 provides optimized geometries
+
+conformational_notes: |
+  Electronic properties like HOMO energy depend strongly on molecular
+  geometry. Different conformers can have significantly different
+  orbital energies due to orbital overlap changes.
+
+# Use QM9 optimized geometries
+data:
+  conformer_generation:
+    use_dataset_geometries: true
+    generate_additional: true
+    max_conformers: 30
+    energy_window: 10.0
+
+training:
+  base_learning_rate: 5.0e-5
+  batch_size: 128
+  max_epochs: 500
+
+# Related QM9 properties
+related_properties:
+  - lumo
+  - gap
+  - mu
+  - alpha
+  - r2
+  - zpve
+  - U0
+  - U
+  - H
+  - G
+  - Cv
+
+source:
+  paper: "QM9: Quantum Machine 9 dataset"
+  url: "https://figshare.com/collections/Quantum_chemistry_structures_and_properties_of_134_kilo_molecules/978904"
+  license: "CC0"
