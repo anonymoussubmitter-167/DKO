@@ -1,0 +1,29 @@
+{
+  "timestamp": "2026-02-21T01:07:31.857320",
+  "config": {
+    "models": [
+      "dko_gated",
+      "dko_invariants",
+      "attention"
+    ],
+    "datasets": [
+      "esol",
+      "lipophilicity",
+      "qm9_gap"
+    ],
+    "seeds": [
+      42,
+      123,
+      456,
+      789,
+      1000,
+      1111,
+      2222,
+      3333,
+      4444,
+      5555
+    ]
+  },
+  "raw_results": [],
+  "statistics": {}
+}

@@ -1,0 +1,105 @@
+# =============================================================================
+# DKO Experiment Configuration Template
+# =============================================================================
+#
+# Copy this file and customize for your specific experiment.
+# Example: configs/experiments/dko_lipophilicity.yaml
+#
+# =============================================================================
+
+# Experiment metadata
+experiment:
+  name: dko_template
+  description: "DKO model experiment"
+  tags: ["dko", "benchmark"]
+
+# Dataset configuration
+dataset:
+  name: lipophilicity  # esol, lipophilicity, freesolv, bace, bbbp, etc.
+  task: regression     # regression or classification
+  split_method: scaffold  # scaffold (for molecular) or random
+  train_ratio: 0.8
+  val_ratio: 0.1
+  test_ratio: 0.1
+
+# Conformer generation
+conformer:
+  num_conformers: 20
+  max_conformers: 50
+  energy_window: 10.0  # kcal/mol
+  optimize: true
+  method: mmff  # mmff or uff
+
+# Feature extraction
+features:
+  descriptor_type: rdkit_2d  # rdkit_2d, mordred, or both
+  normalize: true
+  use_3d_features: true
+
+# Model configuration
+model:
+  type: dko
+
+  # DKO-specific settings
+  dko:
+    feature_dim: null  # Auto-set from features
+    output_dim: 1
+    pca_components: 50
+    kernel_hidden_dims: [256, 128]
+    predictor_hidden_dims: [128, 64]
+    dropout: 0.1
+    use_batch_norm: true
+    psd_method: eigenvalue_clipping
+
+# Training configuration
+training:
+  # Optimizer (AdamW as specified in research plan)
+  optimizer: adamw
+  base_learning_rate: 1.0e-4
+  weight_decay: 1.0e-5
+
+  # Scheduler (Cosine annealing as specified)
+  scheduler: cosine_annealing
+  min_learning_rate: 1.0e-6
+
+  # Training loop
+  max_epochs: 300
+  batch_size: 32
+  early_stopping_patience: 30
+  gradient_clip_max_norm: 1.0
+
+  # Mixed precision
+  mixed_precision: true
+
+  # Checkpointing
+  save_every_n_epochs: 10
+  keep_n_checkpoints: 3  # Keep only last N periodic checkpoints
+
+  # Reproducibility
+  seed: 42
+  deterministic: true
+
+# Evaluation configuration
+evaluation:
+  metrics:
+    regression: [rmse, mae, r2, spearman]
+    classification: [auroc, auprc, accuracy, f1]
+
+  # Cross-validation
+  n_splits: 5
+  stratified: true  # For classification
+
+# Logging configuration
+logging:
+  use_wandb: false
+  wandb_project: dko-experiments
+  log_level: INFO
+  save_attention_weights: true
+  save_predictions: true
+
+# Hardware configuration
+hardware:
+  device: cuda  # cuda or cpu
+  num_workers: 4
+  pin_memory: true
+  prefetch_factor: 2

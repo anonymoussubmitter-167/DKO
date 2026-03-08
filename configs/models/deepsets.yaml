@@ -1,0 +1,72 @@
+# DeepSets model configuration
+# Permutation-invariant model for set inputs
+
+name: "DeepSets"
+description: |
+  DeepSets model for conformer ensembles. Treats conformers as an
+  unordered set and uses permutation-invariant operations for
+  aggregation. A fundamental baseline for set-structured data.
+
+architecture:
+  feature_dim: null  # Set from data
+
+  # Phi network: processes each conformer independently
+  phi_network:
+    hidden_dims: [256, 128]
+    output_dim: 64
+    activation: "relu"
+    use_batch_norm: true
+    dropout: 0.1
+
+  # Pooling operation (permutation invariant)
+  pooling:
+    method: "mean"  # Options: mean, sum, max, mean_max
+
+  # Rho network: processes aggregated representation
+  rho_network:
+    hidden_dims: [128, 64]
+    activation: "relu"
+    dropout: 0.1
+
+  # Final prediction
+  prediction_head:
+    hidden_dims: [32]
+    dropout: 0.0
+
+hyperparameter_search:
+  learning_rate:
+    type: "log_uniform"
+    low: 1.0e-5
+    high: 1.0e-3
+
+  phi_hidden_dims:
+    type: "categorical"
+    choices:
+      - [64]
+      - [128]
+      - [256]
+      - [128, 64]
+      - [256, 128]
+
+  phi_output_dim:
+    type: "categorical"
+    choices: [32, 64, 128, 256]
+
+  rho_hidden_dims:
+    type: "categorical"
+    choices:
+      - [64]
+      - [128]
+      - [64, 32]
+      - [128, 64]
+
+  pooling_method:
+    type: "categorical"
+    choices: ["mean", "sum", "max", "mean_max"]
+
+  dropout:
+    type: "categorical"
+    choices: [0.0, 0.1, 0.2]
+
+training:
+  batch_size: 64

@@ -1,0 +1,77 @@
+{
+  "summary": {
+    "sterimol_B5": {
+      "dko_gated": {
+        "mean": 1.0549,
+        "std": 0.0334
+      },
+      "dko_invariants": {
+        "mean": 1.1505,
+        "std": 0.0333
+      },
+      "mean": {
+        "mean": 1.3171,
+        "std": 0.0964
+      },
+      "attention": {
+        "mean": 0.7598,
+        "std": 0.0847
+      }
+    },
+    "sterimol_L": {
+      "dko_gated": {
+        "mean": 1.1326,
+        "std": 0.1392
+      },
+      "dko_invariants": {
+        "mean": 1.3513,
+        "std": 0.1039
+      },
+      "mean": {
+        "mean": 1.2857,
+        "std": 0.1191
+      },
+      "attention": {
+        "mean": 0.7774,
+        "std": 0.0342
+      }
+    },
+    "sterimol_burB5": {
+      "dko_gated": {
+        "mean": 0.6303,
+        "std": 0.0246
+      },
+      "dko_invariants": {
+        "mean": 0.9521,
+        "std": 0.0536
+      },
+      "mean": {
+        "mean": 0.6784,
+        "std": 0.0556
+      },
+      "attention": {
+        "mean": 0.4316,
+        "std": 0.0294
+      }
+    },
+    "sterimol_burL": {
+      "dko_gated": {
+        "mean": 0.3907,
+        "std": 0.0334
+      },
+      "dko_invariants": {
+        "mean": 0.5243,
+        "std": 0.0345
+      },
+      "mean": {
+        "mean": 0.4105,
+        "std": 0.0289
+      },
+      "attention": {
+        "mean": 0.3747,
+        "std": 0.0753
+      }
+    }
+  },
+  "timestamp": "2026-02-08 (combined)"
+}

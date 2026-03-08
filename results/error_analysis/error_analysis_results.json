@@ -1,0 +1,534 @@
+{
+  "timestamp": "2026-03-01T00:28:21.095464",
+  "config": {
+    "datasets": [
+      "esol",
+      "freesolv",
+      "lipophilicity"
+    ],
+    "seed": 42
+  },
+  "results": {
+    "esol": {
+      "overall": {
+        "fp_rmse": 1.5114290383390065,
+        "hybrid_rmse": 1.3792697554025979,
+        "improvement_pct": 8.743995224654798,
+        "n_test": 114
+      },
+      "heavy_atoms": [
+        {
+          "quartile": "Q1 (\u226414.0)",
+          "n_molecules": 31,
+          "fp_rmse": 1.2165407649001045,
+          "hybrid_rmse": 1.0855269103494851,
+          "improvement_pct": 10.76937644266919
+        },
+        {
+          "quartile": "Q2 (14.0-18.5)",
+          "n_molecules": 26,
+          "fp_rmse": 1.47121892734564,
+          "hybrid_rmse": 1.415269349580212,
+          "improvement_pct": 3.8029403187717072
+        },
+        {
+          "quartile": "Q3 (18.5-22.0)",
+          "n_molecules": 37,
+          "fp_rmse": 1.3856608715251506,
+          "hybrid_rmse": 1.383735071380227,
+          "improvement_pct": 0.1389806253823089
+        },
+        {
+          "quartile": "Q4 (>22.0)",
+          "n_molecules": 20,
+          "fp_rmse": 2.088370422037904,
+          "hybrid_rmse": 1.6944033679959043,
+          "improvement_pct": 18.864807214495645
+        }
+      ],
+      "rotatable_bonds": [
+        {
+          "quartile": "Q1 (\u22640.0)",
+          "n_molecules": 49,
+          "fp_rmse": 1.6336976685277507,
+          "hybrid_rmse": 1.6383700519472717,
+          "improvement_pct": -0.28600049504457403
+        },
+        {
+          "quartile": "Q2 (0.0-1.0)",
+          "n_molecules": 16,
+          "fp_rmse": 0.9616866272049622,
+          "hybrid_rmse": 0.9134074109438571,
+          "improvement_pct": 5.020264907023132
+        },
+        {
+          "quartile": "Q3 (1.0-2.0)",
+          "n_molecules": 23,
+          "fp_rmse": 1.3897560012403456,
+          "hybrid_rmse": 0.8380052185429292,
+          "improvement_pct": 39.70127002185876
+        },
+        {
+          "quartile": "Q4 (>2.0)",
+          "n_molecules": 26,
+          "fp_rmse": 1.6457874874179865,
+          "hybrid_rmse": 1.4655336250968798,
+          "improvement_pct": 10.952438495197224
+        }
+      ],
+      "mw": [
+        {
+          "quartile": "Q1 (\u2264196.2)",
+          "n_molecules": 29,
+          "fp_rmse": 1.17086484797119,
+          "hybrid_rmse": 1.0774366572575802,
+          "improvement_pct": 7.9794171697525185
+        },
+        {
+          "quartile": "Q2 (196.2-259.2)",
+          "n_molecules": 28,
+          "fp_rmse": 1.5694322190369394,
+          "hybrid_rmse": 1.6006338898118404,
+          "improvement_pct": -1.9880865447026104
+        },
+        {
+          "quartile": "Q3 (259.2-300.4)",
+          "n_molecules": 28,
+          "fp_rmse": 1.4045917270354147,
+          "hybrid_rmse": 1.4084211904455108,
+          "improvement_pct": -0.27263889829244325
+        },
+        {
+          "quartile": "Q4 (>300.4)",
+          "n_molecules": 29,
+          "fp_rmse": 1.8237791417225424,
+          "hybrid_rmse": 1.388718822860419,
+          "improvement_pct": 23.854879623813055
+        }
+      ],
+      "tpsa": [
+        {
+          "quartile": "Q1 (\u226420.2)",
+          "n_molecules": 29,
+          "fp_rmse": 1.988912336810326,
+          "hybrid_rmse": 1.9105711179885918,
+          "improvement_pct": 3.938897525638172
+        },
+        {
+          "quartile": "Q2 (20.2-46.1)",
+          "n_molecules": 28,
+          "fp_rmse": 1.2421061202953552,
+          "hybrid_rmse": 1.1057687782126764,
+          "improvement_pct": 10.976303864460446
+        },
+        {
+          "quartile": "Q3 (46.1-75.3)",
+          "n_molecules": 30,
+          "fp_rmse": 1.1786855282079054,
+          "hybrid_rmse": 1.0189154144225798,
+          "improvement_pct": 13.554939800460849
+        },
+        {
+          "quartile": "Q4 (>75.3)",
+          "n_molecules": 27,
+          "fp_rmse": 1.500963461891976,
+          "hybrid_rmse": 1.3000252351471087,
+          "improvement_pct": 13.387283024970053
+        }
+      ],
+      "logp": [
+        {
+          "quartile": "Q1 (\u22641.3)",
+          "n_molecules": 29,
+          "fp_rmse": 1.3363770391312273,
+          "hybrid_rmse": 1.2298073570548627,
+          "improvement_pct": 7.97452208140639
+        },
+        {
+          "quartile": "Q2 (1.3-2.7)",
+          "n_molecules": 28,
+          "fp_rmse": 0.9674923153216684,
+          "hybrid_rmse": 0.9653383352263066,
+          "improvement_pct": 0.22263536994043936
+        },
+        {
+          "quartile": "Q3 (2.7-4.1)",
+          "n_molecules": 28,
+          "fp_rmse": 1.0169448661520504,
+          "hybrid_rmse": 0.9423316656387754,
+          "improvement_pct": 7.336995642212043
+        },
+        {
+          "quartile": "Q4 (>4.1)",
+          "n_molecules": 29,
+          "fp_rmse": 2.3004220545724423,
+          "hybrid_rmse": 2.0515365205219505,
+          "improvement_pct": 10.819124845190629
+        }
+      ],
+      "rotatable_bonds_correlation": {
+        "pearson_r": 0.10548860693834335,
+        "pearson_p": 0.26398691420366616,
+        "spearman_r": 0.11814331098389518,
+        "spearman_p": 0.21060147522536365
+      },
+      "heavy_atoms_correlation": {
+        "pearson_r": 0.02290675942607288,
+        "pearson_p": 0.8088471061916284,
+        "spearman_r": -0.03935105206234637,
+        "spearman_p": 0.677640538053079
+      },
+      "mw_correlation": {
+        "pearson_r": 0.06531739645350765,
+        "pearson_p": 0.48991060786091795,
+        "spearman_r": -0.005451621919884028,
+        "spearman_p": 0.954094066536429
+      }
+    },
+    "freesolv": {
+      "overall": {
+        "fp_rmse": 3.0267592906800322,
+        "hybrid_rmse": 3.1113891668950964,
+        "improvement_pct": -2.796055717930911,
+        "n_test": 55
+      },
+      "heavy_atoms": [
+        {
+          "quartile": "Q1 (\u22647.0)",
+          "n_molecules": 16,
+          "fp_rmse": 2.7371600874548423,
+          "hybrid_rmse": 2.898350825326118,
+          "improvement_pct": -5.888977360515268
+        },
+        {
+          "quartile": "Q2 (7.0-11.0)",
+          "n_molecules": 12,
+          "fp_rmse": 3.790478704734508,
+          "hybrid_rmse": 4.181192239707781,
+          "improvement_pct": -10.307762301506965
+        },
+        {
+          "quartile": "Q3 (11.0-16.0)",
+          "n_molecules": 14,
+          "fp_rmse": 2.4110141996841894,
+          "hybrid_rmse": 2.3249766407807306,
+          "improvement_pct": 3.568521451044483
+        },
+        {
+          "quartile": "Q4 (>16.0)",
+          "n_molecules": 13,
+          "fp_rmse": 3.16474115319136,
+          "hybrid_rmse": 2.9426334119039574,
+          "improvement_pct": 7.018196134727369
+        }
+      ],
+      "rotatable_bonds": [
+        {
+          "quartile": "Q1 (\u22640.0)",
+          "n_molecules": 37,
+          "fp_rmse": 2.5393996427434034,
+          "hybrid_rmse": 2.8893847368358805,
+          "improvement_pct": -13.782198288189718
+        },
+        {
+          "quartile": "Q3 (0.0-1.0)",
+          "n_molecules": 6,
+          "fp_rmse": 4.864273843490848,
+          "hybrid_rmse": 4.304566767018052,
+          "improvement_pct": 11.506487802321622
+        },
+        {
+          "quartile": "Q4 (>1.0)",
+          "n_molecules": 12,
+          "fp_rmse": 3.2055501201269623,
+          "hybrid_rmse": 3.060078103532732,
+          "improvement_pct": 4.538129529806526
+        }
+      ],
+      "mw": [
+        {
+          "quartile": "Q1 (\u2264100.2)",
+          "n_molecules": 14,
+          "fp_rmse": 1.8139179165843915,
+          "hybrid_rmse": 2.438881073576437,
+          "improvement_pct": -34.45377275774702
+        },
+        {
+          "quartile": "Q2 (100.2-154.2)",
+          "n_molecules": 14,
+          "fp_rmse": 3.8768517595223724,
+          "hybrid_rmse": 4.077444687956677,
+          "improvement_pct": -5.174119127500967
+        },
+        {
+          "quartile": "Q3 (154.2-230.0)",
+          "n_molecules": 13,
+          "fp_rmse": 2.987370371581088,
+          "hybrid_rmse": 2.825949883573269,
+          "improvement_pct": 5.40343070760209
+        },
+        {
+          "quartile": "Q4 (>230.0)",
+          "n_molecules": 14,
+          "fp_rmse": 3.063251048380173,
+          "hybrid_rmse": 2.83588219346985,
+          "improvement_pct": 7.422468851534514
+        }
+      ],
+      "tpsa": [
+        {
+          "quartile": "Q1 (\u22640.0)",
+          "n_molecules": 15,
+          "fp_rmse": 1.5197538710991367,
+          "hybrid_rmse": 1.960333755651045,
+          "improvement_pct": -28.99021301608965
+        },
+        {
+          "quartile": "Q2 (0.0-15.8)",
+          "n_molecules": 13,
+          "fp_rmse": 2.0339308319572917,
+          "hybrid_rmse": 2.3219068833819367,
+          "improvement_pct": -14.158596098743434
+        },
+        {
+          "quartile": "Q3 (15.8-36.5)",
+          "n_molecules": 13,
+          "fp_rmse": 3.8567431401543137,
+          "hybrid_rmse": 4.336440879908064,
+          "improvement_pct": -12.437897011066108
+        },
+        {
+          "quartile": "Q4 (>36.5)",
+          "n_molecules": 14,
+          "fp_rmse": 3.98279982420472,
+          "hybrid_rmse": 3.3832527627095965,
+          "improvement_pct": 15.0534068484057
+        }
+      ],
+      "logp": [
+        {
+          "quartile": "Q1 (\u22641.1)",
+          "n_molecules": 14,
+          "fp_rmse": 3.262850959038262,
+          "hybrid_rmse": 3.494677002426028,
+          "improvement_pct": -7.105014795284973
+        },
+        {
+          "quartile": "Q2 (1.1-2.2)",
+          "n_molecules": 14,
+          "fp_rmse": 2.756806720687663,
+          "hybrid_rmse": 2.676996389444409,
+          "improvement_pct": 2.895028173151937
+        },
+        {
+          "quartile": "Q3 (2.2-3.4)",
+          "n_molecules": 13,
+          "fp_rmse": 3.6018091507985264,
+          "hybrid_rmse": 3.8201715015041984,
+          "improvement_pct": -6.062574155470196
+        },
+        {
+          "quartile": "Q4 (>3.4)",
+          "n_molecules": 14,
+          "fp_rmse": 2.387079127820053,
+          "hybrid_rmse": 2.2585635121186627,
+          "improvement_pct": 5.3838020785994845
+        }
+      ],
+      "rotatable_bonds_correlation": {
+        "pearson_r": 0.23114197461856525,
+        "pearson_p": 0.08952677084857448,
+        "spearman_r": 0.1840448394889796,
+        "spearman_p": 0.17859779155080532
+      },
+      "heavy_atoms_correlation": {
+        "pearson_r": 0.2580939562747715,
+        "pearson_p": 0.05710807711959784,
+        "spearman_r": 0.2747704089049034,
+        "spearman_p": 0.04233548615045245
+      },
+      "mw_correlation": {
+        "pearson_r": 0.29441371020439056,
+        "pearson_p": 0.02911761084020999,
+        "spearman_r": 0.3017009686812716,
+        "spearman_p": 0.025186796989222646
+      }
+    },
+    "lipophilicity": {
+      "overall": {
+        "fp_rmse": 0.9041275755847389,
+        "hybrid_rmse": 0.9556695182330053,
+        "improvement_pct": -5.7007378206479284,
+        "n_test": 420
+      },
+      "heavy_atoms": [
+        {
+          "quartile": "Q1 (\u226421.0)",
+          "n_molecules": 106,
+          "fp_rmse": 0.919676647421324,
+          "hybrid_rmse": 0.9876578932401645,
+          "improvement_pct": -7.391863869703844
+        },
+        {
+          "quartile": "Q2 (21.0-27.0)",
+          "n_molecules": 110,
+          "fp_rmse": 0.9546066019904896,
+          "hybrid_rmse": 1.00621717400107,
+          "improvement_pct": -5.406475495032712
+        },
+        {
+          "quartile": "Q3 (27.0-33.0)",
+          "n_molecules": 109,
+          "fp_rmse": 0.9005652081409892,
+          "hybrid_rmse": 0.9144939518132968,
+          "improvement_pct": -1.5466668650302824
+        },
+        {
+          "quartile": "Q4 (>33.0)",
+          "n_molecules": 95,
+          "fp_rmse": 0.8273687873405777,
+          "hybrid_rmse": 0.9041396846062146,
+          "improvement_pct": -9.278921134117544
+        }
+      ],
+      "rotatable_bonds": [
+        {
+          "quartile": "Q1 (\u22643.0)",
+          "n_molecules": 137,
+          "fp_rmse": 1.0247804177161512,
+          "hybrid_rmse": 1.0852494145531895,
+          "improvement_pct": -5.9006784079462395
+        },
+        {
+          "quartile": "Q2 (3.0-5.0)",
+          "n_molecules": 109,
+          "fp_rmse": 0.8159098099626166,
+          "hybrid_rmse": 0.8606024472471536,
+          "improvement_pct": -5.4776443105377925
+        },
+        {
+          "quartile": "Q3 (5.0-7.0)",
+          "n_molecules": 96,
+          "fp_rmse": 0.9034362473414913,
+          "hybrid_rmse": 0.9243124733483815,
+          "improvement_pct": -2.3107580715653055
+        },
+        {
+          "quartile": "Q4 (>7.0)",
+          "n_molecules": 78,
+          "fp_rmse": 0.7888360661341876,
+          "hybrid_rmse": 0.8732966336192421,
+          "improvement_pct": -10.706986040707621
+        }
+      ],
+      "mw": [
+        {
+          "quartile": "Q1 (\u2264302.8)",
+          "n_molecules": 105,
+          "fp_rmse": 0.9044362371877656,
+          "hybrid_rmse": 0.9714572339191617,
+          "improvement_pct": -7.410251157095364
+        },
+        {
+          "quartile": "Q2 (302.8-379.6)",
+          "n_molecules": 105,
+          "fp_rmse": 0.9949302856638632,
+          "hybrid_rmse": 1.0609858136964898,
+          "improvement_pct": -6.639211710049746
+        },
+        {
+          "quartile": "Q3 (379.6-463.6)",
+          "n_molecules": 105,
+          "fp_rmse": 0.8646914771842413,
+          "hybrid_rmse": 0.8634984414373518,
+          "improvement_pct": 0.13797241887644476
+        },
+        {
+          "quartile": "Q4 (>463.6)",
+          "n_molecules": 105,
+          "fp_rmse": 0.8451060055083889,
+          "hybrid_rmse": 0.9155147730949027,
+          "improvement_pct": -8.331353360121746
+        }
+      ],
+      "tpsa": [
+        {
+          "quartile": "Q1 (\u226455.7)",
+          "n_molecules": 105,
+          "fp_rmse": 0.7357794408736871,
+          "hybrid_rmse": 0.8011635672850906,
+          "improvement_pct": -8.886375832105943
+        },
+        {
+          "quartile": "Q2 (55.7-78.9)",
+          "n_molecules": 106,
+          "fp_rmse": 1.092057097247005,
+          "hybrid_rmse": 1.0934633788840966,
+          "improvement_pct": -0.12877363652841947
+        },
+        {
+          "quartile": "Q3 (78.9-96.6)",
+          "n_molecules": 104,
+          "fp_rmse": 0.8747435554787343,
+          "hybrid_rmse": 0.9491366944405839,
+          "improvement_pct": -8.504565537626094
+        },
+        {
+          "quartile": "Q4 (>96.6)",
+          "n_molecules": 105,
+          "fp_rmse": 0.875545384422345,
+          "hybrid_rmse": 0.9549992617156622,
+          "improvement_pct": -9.07478683651998
+        }
+      ],
+      "logp": [
+        {
+          "quartile": "Q1 (\u22642.5)",
+          "n_molecules": 105,
+          "fp_rmse": 1.1209274921997456,
+          "hybrid_rmse": 1.211039674289801,
+          "improvement_pct": -8.03907324221447
+        },
+        {
+          "quartile": "Q2 (2.5-3.3)",
+          "n_molecules": 105,
+          "fp_rmse": 0.7637659533452197,
+          "hybrid_rmse": 0.7921357608669952,
+          "improvement_pct": -3.714463494676422
+        },
+        {
+          "quartile": "Q3 (3.3-4.2)",
+          "n_molecules": 105,
+          "fp_rmse": 0.7797249615165827,
+          "hybrid_rmse": 0.8040345191583467,
+          "improvement_pct": -3.117709300274468
+        },
+        {
+          "quartile": "Q4 (>4.2)",
+          "n_molecules": 105,
+          "fp_rmse": 0.9066414957745824,
+          "hybrid_rmse": 0.9553267754922099,
+          "improvement_pct": -5.3698490466767765
+        }
+      ],
+      "rotatable_bonds_correlation": {
+        "pearson_r": -0.03756482538176068,
+        "pearson_p": 0.44259026444089555,
+        "spearman_r": -0.051663511654579324,
+        "spearman_p": 0.2908142744015312
+      },
+      "heavy_atoms_correlation": {
+        "pearson_r": 0.03741471219017126,
+        "pearson_p": 0.4444168335596651,
+        "spearman_r": 0.007653238761310734,
+        "spearman_p": 0.8757338386268312
+      },
+      "mw_correlation": {
+        "pearson_r": 0.03135209849799597,
+        "pearson_p": 0.5216724835408131,
+        "spearman_r": 0.0004900418094504548,
+        "spearman_p": 0.9920109643147279
+      }
+    }
+  }
+}

@@ -1,0 +1,46 @@
+# Single Conformer Baseline configuration
+# Uses only the lowest energy conformer
+
+name: "SingleConformer"
+description: |
+  Single conformer baseline model. Uses only the lowest energy
+  conformer for each molecule. This is the standard approach
+  in many molecular ML pipelines and serves as a key baseline.
+
+architecture:
+  # Conformer selection
+  conformer_selection:
+    method: "lowest_energy"  # or "random", "first"
+
+  # Feature processing (same as DKO for fair comparison)
+  feature_encoder:
+    hidden_dims: [256, 128]
+    activation: "relu"
+    use_batch_norm: true
+    dropout: 0.1
+
+  # Prediction head
+  prediction_head:
+    hidden_dims: [64, 32]
+    dropout: 0.1
+
+hyperparameter_search:
+  learning_rate:
+    type: "log_uniform"
+    low: 1.0e-5
+    high: 1.0e-3
+
+  hidden_dims:
+    type: "categorical"
+    choices:
+      - [128]
+      - [256]
+      - [256, 128]
+      - [512, 256]
+
+  dropout:
+    type: "categorical"
+    choices: [0.0, 0.1, 0.2]
+
+training:
+  batch_size: 64

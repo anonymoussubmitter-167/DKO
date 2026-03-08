@@ -1,0 +1,49 @@
+# FreeSolv dataset configuration
+# Hydration free energy prediction
+
+name: "FreeSolv"
+type: "regression"
+num_molecules: 642
+task: "hydration_free_energy"
+metric: "rmse"
+target_column: "expt"
+smiles_column: "smiles"
+unit: "kcal/mol"
+
+description: |
+  FreeSolv (Free Solvation Database) contains experimental hydration
+  free energies for small molecules in water. Values are computed
+  from experimental partition coefficients and vapor pressures.
+
+property_type: "conformationally_dependent"
+expected_dko_advantage: 0.06  # 4-7% improvement
+
+preprocessing:
+  standardize_smiles: true
+  remove_salts: true
+  neutralize: true
+
+conformational_notes: |
+  Solvation depends on molecular surface area and conformational
+  flexibility. Different conformers expose different hydrophilic
+  and hydrophobic surfaces to solvent.
+
+# Use calculated values for comparison
+include_calculated:
+  mobley_calc: true  # Alchemical free energy calculations
+
+data:
+  conformer_generation:
+    max_conformers: 30
+    energy_window: 10.0
+    include_solvent_accessible_surface: true
+
+training:
+  base_learning_rate: 1.0e-4
+  batch_size: 32
+  max_epochs: 200
+
+source:
+  paper: "FreeSolv: A Database of Experimental and Calculated Hydration Free Energies"
+  url: "https://github.com/MobleyLab/FreeSolv"
+  license: "CC-BY"

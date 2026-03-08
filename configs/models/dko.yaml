@@ -1,0 +1,111 @@
+# DKO (Distribution Kernel Operator) model configuration
+# Main model for conformer ensemble learning
+
+name: "DKO"
+description: |
+  Distribution Kernel Operator model for learning from conformer
+  distributions. Uses a learned kernel to aggregate information
+  across the conformer ensemble.
+
+architecture:
+  feature_dim: null  # Set automatically from data
+
+  # PCA for dimensionality reduction of pairwise features
+  pca:
+    enabled: true
+    variance_threshold: 0.95  # Reduce D^2 to ~500-1000 features
+    min_components: 100
+    max_components: 2000
+    whiten: true
+
+  # Kernel network: maps pairs of conformer features to kernel values
+  kernel_network:
+    hidden_dims: [512, 256, 128]
+    output_dim: 64
+    activation: "relu"
+    use_batch_norm: true
+    dropout: 0.1
+
+    # Positive semi-definite constraint
+    use_psd_constraint: true  # K = LL^T
+    psd_method: "cholesky"  # or "eigenvalue_clipping"
+
+  # Branch network: processes aggregated kernel features
+  branch_network:
+    hidden_dims: [128, 64]
+    activation: "relu"
+    dropout: 0.1
+    use_residual: true
+
+  # Final prediction head
+  prediction_head:
+    hidden_dims: [32]
+    dropout: 0.0
+
+  # Aggregation method
+  aggregation:
+    method: "kernel_mean"  # or "kernel_attention"
+    temperature: 1.0
+
+# Hyperparameter search space for Optuna
+hyperparameter_search:
+  learning_rate:
+    type: "log_uniform"
+    low: 1.0e-5
+    high: 1.0e-3
+
+  weight_decay:
+    type: "log_uniform"
+    low: 1.0e-6
+    high: 1.0e-4
+
+  hidden_dims:
+    type: "categorical"
+    choices:
+      - [64]
+      - [128]
+      - [256]
+      - [512]
+      - [256, 128]
+      - [512, 256]
+      - [512, 256, 128]
+
+  kernel_output_dim:
+    type: "categorical"
+    choices: [32, 64, 128, 256]
+
+  dropout:
+    type: "categorical"
+    choices: [0.0, 0.1, 0.2, 0.3]
+
+  pca_variance:
+    type: "categorical"
+    choices: [0.90, 0.95, 0.99]
+
+  use_batch_norm:
+    type: "categorical"
+    choices: [true, false]
+
+  aggregation_temperature:
+    type: "uniform"
+    low: 0.1
+    high: 2.0
+
+# Training specifics for DKO
+training:
+  # DKO benefits from larger batch sizes for stable kernel estimation
+  batch_size: 64
+
+  # Gradient clipping is important for kernel stability
+  gradient_clip_max_norm: 1.0
+
+  # Warmup helps with kernel initialization
+  scheduler:
+    type: "warmup_cosine"
+    warmup_epochs: 20
+    warmup_start_lr: 1.0e-6
+
+# Regularization
+regularization:
+  kernel_regularization: 0.01  # Frobenius norm of K
+  orthogonality_penalty: 0.0  # Optional: encourage orthogonal features

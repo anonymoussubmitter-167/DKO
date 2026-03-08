@@ -1,0 +1,28 @@
+[
+  {
+    "model": "attention",
+    "dataset": "esol",
+    "best_value": 2.710271120071411,
+    "best_params": {
+      "learning_rate": 0.0002246426547532872,
+      "weight_decay": 8.078320352814237e-06,
+      "dropout": 0.0
+    },
+    "best_trial": 39,
+    "n_trials": 50,
+    "n_pruned": 0
+  },
+  {
+    "model": "attention",
+    "dataset": "lipophilicity",
+    "best_value": 1.413424585546766,
+    "best_params": {
+      "learning_rate": 0.0004138040112561013,
+      "weight_decay": 4.066563313514799e-06,
+      "dropout": 0.1
+    },
+    "best_trial": 7,
+    "n_trials": 50,
+    "n_pruned": 0
+  }
+]

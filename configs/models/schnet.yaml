@@ -1,0 +1,73 @@
+# SchNet model configuration
+# Continuous-filter convolutional neural network for molecules
+
+name: "SchNet"
+description: |
+  SchNet: A continuous-filter convolutional neural network for
+  modeling quantum interactions. Uses radial basis functions and
+  continuous convolutions to model atomic environments.
+
+architecture:
+  # Atom embedding
+  atom_embedding_dim: 128
+  max_atomic_num: 100
+
+  # SchNet interaction blocks
+  num_interactions: 6
+
+  # Continuous filter convolution
+  num_filters: 128
+  num_gaussians: 50
+  cutoff: 10.0  # Angstroms
+
+  # Radial basis functions
+  rbf_type: "gaussian"  # or "bessel"
+  trainable_rbf: false
+
+  # Output network
+  output_network:
+    hidden_dims: [128, 64]
+    activation: "shifted_softplus"
+
+  # Aggregation for conformer ensemble
+  conformer_aggregation:
+    method: "mean"  # or "attention", "boltzmann"
+    use_energy_weighting: false
+
+hyperparameter_search:
+  learning_rate:
+    type: "log_uniform"
+    low: 1.0e-5
+    high: 1.0e-3
+
+  num_interactions:
+    type: "int"
+    low: 3
+    high: 8
+
+  num_filters:
+    type: "categorical"
+    choices: [64, 128, 256]
+
+  atom_embedding_dim:
+    type: "categorical"
+    choices: [64, 128, 256]
+
+  cutoff:
+    type: "categorical"
+    choices: [5.0, 7.5, 10.0, 15.0]
+
+  num_gaussians:
+    type: "categorical"
+    choices: [25, 50, 100]
+
+training:
+  batch_size: 32
+  base_learning_rate: 1.0e-4
+  max_epochs: 500
+
+  # SchNet-specific
+  scheduler:
+    type: "plateau"
+    factor: 0.5
+    patience: 25

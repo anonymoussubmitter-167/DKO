@@ -1,0 +1,57 @@
+# CYP3A4 dataset configuration
+# Cytochrome P450 3A4 inhibition prediction
+
+name: "CYP3A4"
+type: "classification"
+num_molecules: 12328
+task: "cyp3a4_inhibition"
+metric: "auc"
+target_column: "activity"
+smiles_column: "smiles"
+
+description: |
+  CYP3A4 (Cytochrome P450 3A4) inhibition dataset. CYP3A4 is the most
+  abundant cytochrome P450 enzyme and metabolizes ~50% of drugs.
+  Inhibition can lead to drug-drug interactions.
+
+property_type: "conformationally_dependent"
+expected_dko_advantage: 0.025  # 2-3% improvement in AUC
+
+threshold:
+  value: 10.0  # uM
+  direction: "less_than"
+
+class_balance:
+  positive_ratio: 0.42
+
+preprocessing:
+  standardize_smiles: true
+  remove_salts: true
+
+conformational_notes: |
+  CYP3A4 has a large, flexible binding site that can accommodate
+  diverse ligand conformations. Molecular flexibility is important
+  for substrate recognition.
+
+data:
+  conformer_generation:
+    max_conformers: 50
+    energy_window: 15.0
+
+training:
+  base_learning_rate: 1.0e-4
+  batch_size: 64
+  max_epochs: 200
+  class_weights: "balanced"
+
+# Other CYP isoforms (can be added as multi-task)
+related_isoforms:
+  - CYP1A2
+  - CYP2C9
+  - CYP2C19
+  - CYP2D6
+
+source:
+  paper: "PubChem BioAssay"
+  url: "https://pubchem.ncbi.nlm.nih.gov/bioassay/1851"
+  license: "Public domain"

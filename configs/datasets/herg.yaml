@@ -1,0 +1,54 @@
+# hERG dataset configuration
+# hERG potassium channel inhibition prediction
+
+name: "hERG"
+type: "classification"
+num_molecules: 7889
+task: "herg_inhibition"
+metric: "auc"
+target_column: "activity"
+smiles_column: "smiles"
+
+description: |
+  hERG (human Ether-a-go-go-Related Gene) potassium channel inhibition
+  dataset. hERG inhibition is a major cause of drug-induced cardiac
+  arrhythmia and a critical safety endpoint in drug development.
+
+property_type: "conformationally_dependent"
+expected_dko_advantage: 0.03  # 2-4% improvement in AUC
+
+threshold:
+  value: 10.0  # uM
+  direction: "less_than"  # IC50 < 10 uM = inhibitor
+
+class_balance:
+  positive_ratio: 0.35  # Approximate
+
+preprocessing:
+  standardize_smiles: true
+  remove_salts: true
+  remove_duplicates: true
+
+conformational_notes: |
+  hERG binding involves the channel pore and requires specific
+  3D pharmacophore patterns. Molecular flexibility affects the
+  ability to adopt the binding conformation.
+
+data:
+  conformer_generation:
+    max_conformers: 50
+    energy_window: 15.0
+
+training:
+  base_learning_rate: 1.0e-4
+  batch_size: 64
+  max_epochs: 200
+  class_weights: "balanced"
+
+evaluation:
+  classification_metrics: ["auc", "accuracy", "precision", "recall", "f1", "specificity"]
+
+source:
+  paper: "Cardiotoxicity prediction using multiple data sources"
+  url: "https://github.com/cheminfo/herg"
+  license: "MIT"

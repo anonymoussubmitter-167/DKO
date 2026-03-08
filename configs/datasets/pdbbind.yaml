@@ -1,0 +1,54 @@
+# PDBBind dataset configuration
+# Protein-ligand binding affinity prediction
+
+name: "PDBBind"
+type: "regression"
+num_molecules: 11908  # Refined set
+task: "binding_affinity"
+metric: "rmse"
+target_column: "-logKd/Ki"
+smiles_column: "smiles"
+
+description: |
+  PDBBind database containing experimentally measured binding affinities
+  for protein-ligand complexes with known 3D structures. Uses the
+  refined set for quality-controlled data.
+
+property_type: "conformationally_dependent"
+expected_dko_advantage: 0.10  # 8-12% improvement
+
+subsets:
+  core: 285
+  refined: 4852
+  general: 11908
+
+# Binding pocket information available
+use_pocket_info: true
+pocket_radius: 10.0  # Angstroms
+
+preprocessing:
+  standardize_smiles: true
+  remove_salts: true
+  filter_by_resolution: true
+  max_resolution: 2.5  # Angstroms
+
+conformational_notes: |
+  Gold standard for binding affinity prediction. Ligand conformations
+  are critical for binding pose prediction. DKO can capture the
+  distribution of bioactive conformers.
+
+data:
+  conformer_generation:
+    max_conformers: 100  # More conformers for binding studies
+    energy_window: 20.0
+    use_experimental_poses: true  # When available
+
+training:
+  base_learning_rate: 5.0e-5
+  batch_size: 16
+  max_epochs: 500
+
+source:
+  paper: "PDBbind: A Comprehensive Database of Protein-Ligand Binding Affinities"
+  url: "http://www.pdbbind.org.cn/"
+  license: "Academic use only"

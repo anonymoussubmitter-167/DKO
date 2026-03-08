@@ -1,0 +1,53 @@
+# Mean Ensemble Baseline configuration
+# Simple averaging over conformer predictions
+
+name: "MeanEnsemble"
+description: |
+  Mean ensemble baseline. Processes each conformer independently
+  and averages the predictions. Simple but effective baseline
+  for conformer ensemble methods.
+
+architecture:
+  # Per-conformer network
+  conformer_network:
+    hidden_dims: [256, 128]
+    activation: "relu"
+    use_batch_norm: true
+    dropout: 0.1
+
+  # Per-conformer prediction
+  prediction_head:
+    hidden_dims: [64, 32]
+    dropout: 0.1
+
+  # Aggregation
+  aggregation:
+    method: "mean"  # Fixed to mean
+
+  # Whether to share weights across conformers
+  share_weights: true
+
+hyperparameter_search:
+  learning_rate:
+    type: "log_uniform"
+    low: 1.0e-5
+    high: 1.0e-3
+
+  hidden_dims:
+    type: "categorical"
+    choices:
+      - [128]
+      - [256]
+      - [256, 128]
+      - [512, 256]
+
+  dropout:
+    type: "categorical"
+    choices: [0.0, 0.1, 0.2]
+
+  share_weights:
+    type: "categorical"
+    choices: [true, false]
+
+training:
+  batch_size: 32

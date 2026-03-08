@@ -1,0 +1,514 @@
+{
+  "timestamp": "2026-02-27T02:11:02.144171",
+  "config": {
+    "datasets": [
+      "esol",
+      "freesolv",
+      "qm9_gap"
+    ],
+    "seeds": [
+      42,
+      123,
+      456
+    ],
+    "feature_groups": {
+      "FP": "bits 0-2047 (Morgan fingerprint)",
+      "mu": "dims 2048-2303 (conformer mean)",
+      "sigma": "dims 2304-2308 (total_var, max_var, mean_var, top5_var, effective_rank)"
+    }
+  },
+  "results": {
+    "esol": {
+      "group_importance": {
+        "FP": 0.3142094456569383,
+        "mu": 0.6737652251646675,
+        "sigma": 0.012025351471190032
+      },
+      "group_importance_pct": {
+        "FP": 31.42094386209105,
+        "mu": 67.37652100771807,
+        "sigma": 1.2025351201908796
+      },
+      "top_20_features": [
+        {
+          "rank": 1,
+          "index": 2185,
+          "name": "mu_dim_137",
+          "group": "mu",
+          "importance": 0.0599472646911939
+        },
+        {
+          "rank": 2,
+          "index": 2186,
+          "name": "mu_dim_138",
+          "group": "mu",
+          "importance": 0.05212271213531494
+        },
+        {
+          "rank": 3,
+          "index": 2179,
+          "name": "mu_dim_131",
+          "group": "mu",
+          "importance": 0.03600828473766645
+        },
+        {
+          "rank": 4,
+          "index": 2301,
+          "name": "mu_dim_253",
+          "group": "mu",
+          "importance": 0.017088764968017738
+        },
+        {
+          "rank": 5,
+          "index": 561,
+          "name": "FP_bit_561",
+          "group": "FP",
+          "importance": 0.015829967024425667
+        },
+        {
+          "rank": 6,
+          "index": 2296,
+          "name": "mu_dim_248",
+          "group": "mu",
+          "importance": 0.015584925500055155
+        },
+        {
+          "rank": 7,
+          "index": 2194,
+          "name": "mu_dim_146",
+          "group": "mu",
+          "importance": 0.014821491437032819
+        },
+        {
+          "rank": 8,
+          "index": 2190,
+          "name": "mu_dim_142",
+          "group": "mu",
+          "importance": 0.014798914703230063
+        },
+        {
+          "rank": 9,
+          "index": 1683,
+          "name": "FP_bit_1683",
+          "group": "FP",
+          "importance": 0.013962233439087868
+        },
+        {
+          "rank": 10,
+          "index": 1631,
+          "name": "FP_bit_1631",
+          "group": "FP",
+          "importance": 0.013846312494327625
+        },
+        {
+          "rank": 11,
+          "index": 1873,
+          "name": "FP_bit_1873",
+          "group": "FP",
+          "importance": 0.013699421348671118
+        },
+        {
+          "rank": 12,
+          "index": 2299,
+          "name": "mu_dim_251",
+          "group": "mu",
+          "importance": 0.013326038140803576
+        },
+        {
+          "rank": 13,
+          "index": 2175,
+          "name": "mu_dim_127",
+          "group": "mu",
+          "importance": 0.011675295885652304
+        },
+        {
+          "rank": 14,
+          "index": 2180,
+          "name": "mu_dim_132",
+          "group": "mu",
+          "importance": 0.011319461123396954
+        },
+        {
+          "rank": 15,
+          "index": 641,
+          "name": "FP_bit_641",
+          "group": "FP",
+          "importance": 0.01106688380241394
+        },
+        {
+          "rank": 16,
+          "index": 2294,
+          "name": "mu_dim_246",
+          "group": "mu",
+          "importance": 0.011044574358190099
+        },
+        {
+          "rank": 17,
+          "index": 2277,
+          "name": "mu_dim_229",
+          "group": "mu",
+          "importance": 0.010449205903569236
+        },
+        {
+          "rank": 18,
+          "index": 807,
+          "name": "FP_bit_807",
+          "group": "FP",
+          "importance": 0.00922897116591533
+        },
+        {
+          "rank": 19,
+          "index": 1143,
+          "name": "FP_bit_1143",
+          "group": "FP",
+          "importance": 0.008157337394853434
+        },
+        {
+          "rank": 20,
+          "index": 875,
+          "name": "FP_bit_875",
+          "group": "FP",
+          "importance": 0.008024817332625389
+        }
+      ],
+      "sigma_detail": {
+        "total_var": 0.001606284184769417,
+        "max_var": 0.0014371027743133407,
+        "mean_var": 0.0010322567929203312,
+        "top5_var": 0.004098596206555764,
+        "effective_rank": 0.003851111512631178
+      },
+      "n_nonzero_features": 756,
+      "model_rmse_mean": 1.3580525776879815,
+      "model_rmse_std": 0.015267429077480544
+    },
+    "freesolv": {
+      "group_importance": {
+        "FP": 0.6202878663912437,
+        "mu": 0.3668788789051784,
+        "sigma": 0.012833215587306768
+      },
+      "group_importance_pct": {
+        "FP": 62.02878905925642,
+        "mu": 36.68788932194247,
+        "sigma": 1.2833216088011006
+      },
+      "top_20_features": [
+        {
+          "rank": 1,
+          "index": 314,
+          "name": "FP_bit_314",
+          "group": "FP",
+          "importance": 0.09058452397584915
+        },
+        {
+          "rank": 2,
+          "index": 807,
+          "name": "FP_bit_807",
+          "group": "FP",
+          "importance": 0.04673944413661957
+        },
+        {
+          "rank": 3,
+          "index": 1114,
+          "name": "FP_bit_1114",
+          "group": "FP",
+          "importance": 0.02806919316450755
+        },
+        {
+          "rank": 4,
+          "index": 576,
+          "name": "FP_bit_576",
+          "group": "FP",
+          "importance": 0.025630170789857704
+        },
+        {
+          "rank": 5,
+          "index": 158,
+          "name": "FP_bit_158",
+          "group": "FP",
+          "importance": 0.024090833496302366
+        },
+        {
+          "rank": 6,
+          "index": 650,
+          "name": "FP_bit_650",
+          "group": "FP",
+          "importance": 0.020503330354889233
+        },
+        {
+          "rank": 7,
+          "index": 1380,
+          "name": "FP_bit_1380",
+          "group": "FP",
+          "importance": 0.02009965479373932
+        },
+        {
+          "rank": 8,
+          "index": 1487,
+          "name": "FP_bit_1487",
+          "group": "FP",
+          "importance": 0.017964322585612535
+        },
+        {
+          "rank": 9,
+          "index": 378,
+          "name": "FP_bit_378",
+          "group": "FP",
+          "importance": 0.016681592911481857
+        },
+        {
+          "rank": 10,
+          "index": 1745,
+          "name": "FP_bit_1745",
+          "group": "FP",
+          "importance": 0.016470036779840786
+        },
+        {
+          "rank": 11,
+          "index": 1873,
+          "name": "FP_bit_1873",
+          "group": "FP",
+          "importance": 0.015468264852340022
+        },
+        {
+          "rank": 12,
+          "index": 657,
+          "name": "FP_bit_657",
+          "group": "FP",
+          "importance": 0.015303873922675848
+        },
+        {
+          "rank": 13,
+          "index": 1358,
+          "name": "FP_bit_1358",
+          "group": "FP",
+          "importance": 0.013875414927800497
+        },
+        {
+          "rank": 14,
+          "index": 1171,
+          "name": "FP_bit_1171",
+          "group": "FP",
+          "importance": 0.013040975046654543
+        },
+        {
+          "rank": 15,
+          "index": 2048,
+          "name": "mu_dim_0",
+          "group": "mu",
+          "importance": 0.010561157017946243
+        },
+        {
+          "rank": 16,
+          "index": 2200,
+          "name": "mu_dim_152",
+          "group": "mu",
+          "importance": 0.010120720757792393
+        },
+        {
+          "rank": 17,
+          "index": 1750,
+          "name": "FP_bit_1750",
+          "group": "FP",
+          "importance": 0.009337658993899822
+        },
+        {
+          "rank": 18,
+          "index": 482,
+          "name": "FP_bit_482",
+          "group": "FP",
+          "importance": 0.0092842694372924
+        },
+        {
+          "rank": 19,
+          "index": 692,
+          "name": "FP_bit_692",
+          "group": "FP",
+          "importance": 0.00925708557285058
+        },
+        {
+          "rank": 20,
+          "index": 1928,
+          "name": "FP_bit_1928",
+          "group": "FP",
+          "importance": 0.009094123107691606
+        }
+      ],
+      "sigma_detail": {
+        "total_var": 0.005984490116437276,
+        "max_var": 0.0014725762205974509,
+        "mean_var": 0.003146901144646108,
+        "top5_var": 0.0006355997077965488,
+        "effective_rank": 0.0015936483978293836
+      },
+      "n_nonzero_features": 631,
+      "model_rmse_mean": 2.8237775263870133,
+      "model_rmse_std": 0.20526777159649584
+    },
+    "qm9_gap": {
+      "group_importance": {
+        "FP": 0.4927964016688927,
+        "mu": 0.4897112246981123,
+        "sigma": 0.017492345713738665
+      },
+      "group_importance_pct": {
+        "FP": 49.27964153781225,
+        "mu": 48.97112383215148,
+        "sigma": 1.749234620036273
+      },
+      "top_20_features": [
+        {
+          "rank": 1,
+          "index": 2194,
+          "name": "mu_dim_146",
+          "group": "mu",
+          "importance": 0.09769260510802269
+        },
+        {
+          "rank": 2,
+          "index": 1380,
+          "name": "FP_bit_1380",
+          "group": "FP",
+          "importance": 0.05953087409337362
+        },
+        {
+          "rank": 3,
+          "index": 650,
+          "name": "FP_bit_650",
+          "group": "FP",
+          "importance": 0.03919491606454054
+        },
+        {
+          "rank": 4,
+          "index": 2215,
+          "name": "mu_dim_167",
+          "group": "mu",
+          "importance": 0.037274387975533806
+        },
+        {
+          "rank": 5,
+          "index": 2192,
+          "name": "mu_dim_144",
+          "group": "mu",
+          "importance": 0.03464327360658596
+        },
+        {
+          "rank": 6,
+          "index": 2195,
+          "name": "mu_dim_147",
+          "group": "mu",
+          "importance": 0.028887236820689093
+        },
+        {
+          "rank": 7,
+          "index": 2198,
+          "name": "mu_dim_150",
+          "group": "mu",
+          "importance": 0.026716732963298757
+        },
+        {
+          "rank": 8,
+          "index": 1873,
+          "name": "FP_bit_1873",
+          "group": "FP",
+          "importance": 0.022974420959750812
+        },
+        {
+          "rank": 9,
+          "index": 2209,
+          "name": "mu_dim_161",
+          "group": "mu",
+          "importance": 0.018896359494344022
+        },
+        {
+          "rank": 10,
+          "index": 2191,
+          "name": "mu_dim_143",
+          "group": "mu",
+          "importance": 0.018676627427339554
+        },
+        {
+          "rank": 11,
+          "index": 1004,
+          "name": "FP_bit_1004",
+          "group": "FP",
+          "importance": 0.013704952706272403
+        },
+        {
+          "rank": 12,
+          "index": 1917,
+          "name": "FP_bit_1917",
+          "group": "FP",
+          "importance": 0.011297943031725785
+        },
+        {
+          "rank": 13,
+          "index": 1083,
+          "name": "FP_bit_1083",
+          "group": "FP",
+          "importance": 0.010807644265393416
+        },
+        {
+          "rank": 14,
+          "index": 674,
+          "name": "FP_bit_674",
+          "group": "FP",
+          "importance": 0.01077126773695151
+        },
+        {
+          "rank": 15,
+          "index": 2186,
+          "name": "mu_dim_138",
+          "group": "mu",
+          "importance": 0.00882801623083651
+        },
+        {
+          "rank": 16,
+          "index": 2197,
+          "name": "mu_dim_149",
+          "group": "mu",
+          "importance": 0.008644759082623446
+        },
+        {
+          "rank": 17,
+          "index": 2306,
+          "name": "sigma_mean_var",
+          "group": "sigma",
+          "importance": 0.008529388670770762
+        },
+        {
+          "rank": 18,
+          "index": 2201,
+          "name": "mu_dim_153",
+          "group": "mu",
+          "importance": 0.008492323104292154
+        },
+        {
+          "rank": 19,
+          "index": 2225,
+          "name": "mu_dim_177",
+          "group": "mu",
+          "importance": 0.00776505454753836
+        },
+        {
+          "rank": 20,
+          "index": 2216,
+          "name": "mu_dim_168",
+          "group": "mu",
+          "importance": 0.007745173682148258
+        }
+      ],
+      "sigma_detail": {
+        "total_var": 0.006523586964855592,
+        "max_var": 0.0009034495548500369,
+        "mean_var": 0.008529388670770762,
+        "top5_var": 0.0006954210499922434,
+        "effective_rank": 0.0008404994732700288
+      },
+      "n_nonzero_features": 999,
+      "model_rmse_mean": 0.021040565817462772,
+      "model_rmse_std": 3.6386473269152e-05
+    }
+  }
+}

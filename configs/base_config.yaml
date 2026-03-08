@@ -1,0 +1,109 @@
+# Base configuration for all DKO experiments
+# This file contains default values that can be overridden by dataset, model, and experiment configs
+
+project:
+  name: "dko-conformer-ensembles"
+  seed: 42
+  num_workers: 8
+  device: "cuda"  # or "cpu"
+  deterministic: true
+
+data:
+  conformer_generation:
+    method: "ETKDG"  # RDKit ETKDG algorithm
+    max_conformers: 50
+    energy_window: 15.0  # kcal/mol
+    rmsd_threshold: 0.5  # Angstroms
+    force_field: "MMFF94"
+    temperature: 300  # Kelvin for Boltzmann weights
+    random_seed: 42
+    num_attempts: 1000  # Attempts per conformer
+    prune_rms_thresh: 0.1  # RMSD for pruning
+    use_random_coords: false
+    enforce_chirality: true
+
+  splitting:
+    method: "scaffold"  # Bemis-Murcko scaffold splitting
+    train_ratio: 0.8
+    val_ratio: 0.1
+    test_ratio: 0.1
+    seed: 42
+    stratify: true  # For classification tasks
+
+  features:
+    bond_distance_cutoff: 4.0  # Angstroms
+    include_bond_distances: true
+    include_bond_angles: true
+    include_torsion_angles: true
+    include_ring_info: true
+    include_aromaticity: true
+    normalize: true
+
+  augmentation:
+    enabled: false
+    rotation: true
+    translation: false
+    noise_std: 0.0
+
+training:
+  optimizer: "AdamW"
+  base_learning_rate: 1.0e-4
+  weight_decay: 1.0e-5
+  max_epochs: 300
+  early_stopping_patience: 30
+  batch_size: 32
+  gradient_clip_max_norm: 1.0
+  mixed_precision: true
+  accumulate_grad_batches: 1
+
+  scheduler:
+    type: "cosine"  # Options: cosine, step, plateau, warmup_cosine
+    eta_min: 1.0e-6
+    warmup_epochs: 10
+    warmup_start_lr: 1.0e-6
+
+  loss:
+    regression: "mse"  # Options: mse, mae, huber
+    classification: "bce_with_logits"  # Options: bce_with_logits, cross_entropy
+
+  regularization:
+    dropout: 0.1
+    label_smoothing: 0.0
+
+evaluation:
+  regression_metrics: ["rmse", "mae", "pearson", "r2", "spearman"]
+  classification_metrics: ["auc", "accuracy", "precision", "recall", "f1"]
+  num_seeds: 3
+  random_seeds: [42, 123, 456]
+  confidence_level: 0.95
+
+hyperopt:
+  method: "optuna"
+  n_trials: 50
+  sampler: "TPE"  # Options: TPE, Random, Grid, CMA-ES
+  pruner: "MedianPruner"
+  pruner_n_startup_trials: 5
+  pruner_n_warmup_steps: 10
+  timeout: null  # seconds, null for no timeout
+  direction: "minimize"  # For RMSE/MAE, use "maximize" for AUC
+
+wandb:
+  entity: null  # Set via WANDB_ENTITY environment variable
+  project: "dko-research"
+  tags: ["molecular-ml", "conformers", "dko"]
+  log_freq: 10
+  save_code: true
+  mode: "online"  # Options: online, offline, disabled
+
+checkpointing:
+  save_top_k: 3
+  monitor: "val_loss"
+  mode: "min"
+  save_last: true
+  every_n_epochs: 1
+
+paths:
+  data_dir: "data"
+  log_dir: "logs"
+  checkpoint_dir: "checkpoints"
+  cache_dir: ".cache"

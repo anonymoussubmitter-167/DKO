@@ -1,0 +1,61 @@
+# QM9 Polarizability dataset configuration
+# Isotropic polarizability prediction
+
+name: "QM9_Polarizability"
+type: "regression"
+num_molecules: 133885
+task: "polarizability"
+metric: "mae"
+target_column: "alpha"
+smiles_column: "smiles"
+unit: "Bohr^3"
+
+description: |
+  QM9 dataset containing DFT-calculated isotropic polarizabilities
+  for small organic molecules. Polarizability measures how easily
+  the electron cloud is distorted by an electric field.
+
+property_type: "conformationally_dependent"
+expected_dko_advantage: 0.06  # 5-7% improvement
+
+molecule_constraints:
+  max_heavy_atoms: 9
+  elements: ["C", "H", "O", "N", "F"]
+
+preprocessing:
+  standardize_smiles: true
+  use_3d_from_dataset: true
+
+conformational_notes: |
+  Polarizability depends on molecular shape and size. Extended
+  conformations typically have higher polarizability than compact
+  ones. Particularly important for flexible molecules.
+
+data:
+  conformer_generation:
+    use_dataset_geometries: true
+    generate_additional: true
+    max_conformers: 30
+    energy_window: 10.0
+
+training:
+  base_learning_rate: 5.0e-5
+  batch_size: 128
+  max_epochs: 500
+
+# Value statistics
+value_range:
+  min: 6.0
+  max: 130.0
+  mean: 75.0
+  std: 10.0
+
+# Related to molecular volume
+related_properties:
+  - electronic_spatial_extent  # <R^2>
+  - dipole_moment
+
+source:
+  paper: "QM9 dataset"
+  url: "https://figshare.com/collections/Quantum_chemistry_structures_and_properties_of_134_kilo_molecules/978904"
+  license: "CC0"

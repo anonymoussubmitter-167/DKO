@@ -1,0 +1,57 @@
+# Boltzmann Ensemble Baseline configuration
+# Energy-weighted averaging over conformer predictions
+
+name: "BoltzmannEnsemble"
+description: |
+  Boltzmann ensemble baseline. Weights conformer predictions by
+  their Boltzmann factors (exp(-E/kT)). Uses physics-based weighting
+  to emphasize low-energy conformers.
+
+architecture:
+  # Per-conformer network
+  conformer_network:
+    hidden_dims: [256, 128]
+    activation: "relu"
+    use_batch_norm: true
+    dropout: 0.1
+
+  # Prediction head
+  prediction_head:
+    hidden_dims: [64, 32]
+    dropout: 0.1
+
+  # Boltzmann weighting
+  boltzmann:
+    temperature: 300  # Kelvin
+    energy_source: "force_field"  # or "dft", "semiempirical"
+    trainable_temperature: false
+    min_weight: 1.0e-6  # Numerical stability
+
+hyperparameter_search:
+  learning_rate:
+    type: "log_uniform"
+    low: 1.0e-5
+    high: 1.0e-3
+
+  hidden_dims:
+    type: "categorical"
+    choices:
+      - [128]
+      - [256]
+      - [256, 128]
+      - [512, 256]
+
+  temperature:
+    type: "categorical"
+    choices: [100, 200, 300, 500, 1000]
+
+  trainable_temperature:
+    type: "categorical"
+    choices: [true, false]
+
+  dropout:
+    type: "categorical"
+    choices: [0.0, 0.1, 0.2]
+
+training:
+  batch_size: 32

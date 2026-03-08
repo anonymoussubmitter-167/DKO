@@ -1,0 +1,270 @@
+{
+  "timestamp": "2026-02-27T02:09:59.962722",
+  "config": {
+    "datasets": [
+      "esol",
+      "freesolv",
+      "lipophilicity",
+      "qm9_gap"
+    ],
+    "n_neighbors": 5
+  },
+  "results": {
+    "esol": {
+      "fp": {
+        "label": "FP (2048-bit Morgan)",
+        "total_mi_mean": 1.0964287342950725,
+        "total_mi_std": 0.014469510371684806,
+        "mean_per_feature": 0.02192857468590145,
+        "n_features_original": 2048,
+        "n_features_reduced": 50
+      },
+      "mu": {
+        "label": "Mu (256-dim conformer mean)",
+        "total_mi_mean": 8.271016674811495,
+        "total_mi_std": 0.09978716122917825,
+        "mean_per_feature": 0.1654203334962299,
+        "n_features_original": 256,
+        "n_features_reduced": 50
+      },
+      "sigma": {
+        "label": "Sigma (5 scalar invariants)",
+        "total_mi_mean": 0.34894536979156116,
+        "total_mi_std": 0.016903786823504602,
+        "mean_per_feature": 0.06978907395831223,
+        "n_features_original": 5,
+        "n_features_reduced": 5
+      },
+      "fp_mu": {
+        "label": "FP + Mu",
+        "total_mi_mean": 8.271016674811495,
+        "total_mi_std": 0.09978716122917825,
+        "mean_per_feature": 0.1654203334962299,
+        "n_features_original": 2304,
+        "n_features_reduced": 50
+      },
+      "fp_sigma": {
+        "label": "FP + Sigma",
+        "total_mi_mean": 1.2804834822627618,
+        "total_mi_std": 0.019543870835898525,
+        "mean_per_feature": 0.025609669645255236,
+        "n_features_original": 2053,
+        "n_features_reduced": 50
+      },
+      "mu_sigma": {
+        "label": "Mu + Sigma",
+        "total_mi_mean": 7.979173548304625,
+        "total_mi_std": 0.09710156540614916,
+        "mean_per_feature": 0.1595834709660925,
+        "n_features_original": 261,
+        "n_features_reduced": 50
+      },
+      "fp_mu_sigma": {
+        "label": "FP + Mu + Sigma",
+        "total_mi_mean": 7.979173548304625,
+        "total_mi_std": 0.09710156540614916,
+        "mean_per_feature": 0.1595834709660925,
+        "n_features_original": 2309,
+        "n_features_reduced": 50
+      },
+      "conditional_mi": {
+        "mi_fp_mu": 8.271016674811495,
+        "mi_fp_mu_sigma": 7.979173548304625,
+        "conditional_mi_sigma": -0.29184312650686994,
+        "relative_gain_pct": -3.5285036649982677
+      }
+    },
+    "freesolv": {
+      "fp": {
+        "label": "FP (2048-bit Morgan)",
+        "total_mi_mean": 2.2771665357284974,
+        "total_mi_std": 0.006810576949067994,
+        "mean_per_feature": 0.045543330714569945,
+        "n_features_original": 2048,
+        "n_features_reduced": 50
+      },
+      "mu": {
+        "label": "Mu (256-dim conformer mean)",
+        "total_mi_mean": 4.3915196044059375,
+        "total_mi_std": 0.0037905783345067593,
+        "mean_per_feature": 0.08783039208811876,
+        "n_features_original": 256,
+        "n_features_reduced": 50
+      },
+      "sigma": {
+        "label": "Sigma (5 scalar invariants)",
+        "total_mi_mean": 0.2247123107693175,
+        "total_mi_std": 0.006679646409013573,
+        "mean_per_feature": 0.0449424621538635,
+        "n_features_original": 5,
+        "n_features_reduced": 5
+      },
+      "fp_mu": {
+        "label": "FP + Mu",
+        "total_mi_mean": 4.3915196044059375,
+        "total_mi_std": 0.0037905783345067593,
+        "mean_per_feature": 0.08783039208811876,
+        "n_features_original": 2304,
+        "n_features_reduced": 50
+      },
+      "fp_sigma": {
+        "label": "FP + Sigma",
+        "total_mi_mean": 2.3560431601053318,
+        "total_mi_std": 0.008050597655018088,
+        "mean_per_feature": 0.047120863202106636,
+        "n_features_original": 2053,
+        "n_features_reduced": 50
+      },
+      "mu_sigma": {
+        "label": "Mu + Sigma",
+        "total_mi_mean": 4.324813531100756,
+        "total_mi_std": 0.016696373524906053,
+        "mean_per_feature": 0.08649627062201512,
+        "n_features_original": 261,
+        "n_features_reduced": 50
+      },
+      "fp_mu_sigma": {
+        "label": "FP + Mu + Sigma",
+        "total_mi_mean": 4.324813531100756,
+        "total_mi_std": 0.016696373524906053,
+        "mean_per_feature": 0.08649627062201512,
+        "n_features_original": 2309,
+        "n_features_reduced": 50
+      },
+      "conditional_mi": {
+        "mi_fp_mu": 4.3915196044059375,
+        "mi_fp_mu_sigma": 4.324813531100756,
+        "conditional_mi_sigma": -0.06670607330518141,
+        "relative_gain_pct": -1.5189747356868761
+      }
+    },
+    "lipophilicity": {
+      "fp": {
+        "label": "FP (2048-bit Morgan)",
+        "total_mi_mean": 0.37746143702357954,
+        "total_mi_std": 0.04941190711233471,
+        "mean_per_feature": 0.007549228740471591,
+        "n_features_original": 2048,
+        "n_features_reduced": 50
+      },
+      "mu": {
+        "label": "Mu (256-dim conformer mean)",
+        "total_mi_mean": 0.754537664699475,
+        "total_mi_std": 0.048276922475439944,
+        "mean_per_feature": 0.015090753293989501,
+        "n_features_original": 256,
+        "n_features_reduced": 50
+      },
+      "sigma": {
+        "label": "Sigma (5 scalar invariants)",
+        "total_mi_mean": 0.03014568837851413,
+        "total_mi_std": 0.03696420426094816,
+        "mean_per_feature": 0.006029137675702826,
+        "n_features_original": 5,
+        "n_features_reduced": 5
+      },
+      "fp_mu": {
+        "label": "FP + Mu",
+        "total_mi_mean": 0.754537664699475,
+        "total_mi_std": 0.048276922475439944,
+        "mean_per_feature": 0.015090753293989501,
+        "n_features_original": 2304,
+        "n_features_reduced": 50
+      },
+      "fp_sigma": {
+        "label": "FP + Sigma",
+        "total_mi_mean": 0.39739483783018276,
+        "total_mi_std": 0.0884956070845552,
+        "mean_per_feature": 0.007947896756603656,
+        "n_features_original": 2053,
+        "n_features_reduced": 50
+      },
+      "mu_sigma": {
+        "label": "Mu + Sigma",
+        "total_mi_mean": 0.7378799657637797,
+        "total_mi_std": 0.06008752886212717,
+        "mean_per_feature": 0.014757599315275594,
+        "n_features_original": 261,
+        "n_features_reduced": 50
+      },
+      "fp_mu_sigma": {
+        "label": "FP + Mu + Sigma",
+        "total_mi_mean": 0.7378799657637797,
+        "total_mi_std": 0.06008752886212717,
+        "mean_per_feature": 0.014757599315275594,
+        "n_features_original": 2309,
+        "n_features_reduced": 50
+      },
+      "conditional_mi": {
+        "mi_fp_mu": 0.754537664699475,
+        "mi_fp_mu_sigma": 0.7378799657637797,
+        "conditional_mi_sigma": -0.016657698935695353,
+        "relative_gain_pct": -2.207669638350298
+      }
+    },
+    "qm9_gap": {
+      "fp": {
+        "label": "FP (2048-bit Morgan)",
+        "total_mi_mean": 1.7920591713349943,
+        "total_mi_std": 0.016383792650917075,
+        "mean_per_feature": 0.03584118342669988,
+        "n_features_original": 2048,
+        "n_features_reduced": 50
+      },
+      "mu": {
+        "label": "Mu (256-dim conformer mean)",
+        "total_mi_mean": 9.698122751308583,
+        "total_mi_std": 1.1921776798627306,
+        "mean_per_feature": 0.19396245502617165,
+        "n_features_original": 256,
+        "n_features_reduced": 50
+      },
+      "sigma": {
+        "label": "Sigma (5 scalar invariants)",
+        "total_mi_mean": 0.5400221116366716,
+        "total_mi_std": 0.07996034378167763,
+        "mean_per_feature": 0.10800442232733432,
+        "n_features_original": 5,
+        "n_features_reduced": 5
+      },
+      "fp_mu": {
+        "label": "FP + Mu",
+        "total_mi_mean": 9.698122751308583,
+        "total_mi_std": 1.1921776798627306,
+        "mean_per_feature": 0.19396245502617165,
+        "n_features_original": 2304,
+        "n_features_reduced": 50
+      },
+      "fp_sigma": {
+        "label": "FP + Sigma",
+        "total_mi_mean": 2.135920959750616,
+        "total_mi_std": 0.087203583114357,
+        "mean_per_feature": 0.04271841919501232,
+        "n_features_original": 2053,
+        "n_features_reduced": 50
+      },
+      "mu_sigma": {
+        "label": "Mu + Sigma",
+        "total_mi_mean": 9.38511017915873,
+        "total_mi_std": 1.09304382511026,
+        "mean_per_feature": 0.1877022035831746,
+        "n_features_original": 261,
+        "n_features_reduced": 50
+      },
+      "fp_mu_sigma": {
+        "label": "FP + Mu + Sigma",
+        "total_mi_mean": 9.38511017915873,
+        "total_mi_std": 1.09304382511026,
+        "mean_per_feature": 0.1877022035831746,
+        "n_features_original": 2309,
+        "n_features_reduced": 50
+      },
+      "conditional_mi": {
+        "mi_fp_mu": 9.698122751308583,
+        "mi_fp_mu_sigma": 9.38511017915873,
+        "conditional_mi_sigma": -0.31301257214985334,
+        "relative_gain_pct": -3.227558365400051
+      }
+    }
+  }
+}

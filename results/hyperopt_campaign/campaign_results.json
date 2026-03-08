@@ -1,0 +1,68 @@
+[
+  {
+    "model": "dko_gated",
+    "dataset": "esol",
+    "best_value": 2.399440348148346,
+    "best_params": {
+      "learning_rate": 0.00046973227678077424,
+      "weight_decay": 2.9573593930424166e-05,
+      "dropout": 0.2,
+      "k": 20
+    },
+    "best_trial": 28,
+    "n_trials": 50,
+    "n_pruned": 18
+  },
+  {
+    "model": "dko_gated",
+    "dataset": "lipophilicity",
+    "best_value": 1.539263950926917,
+    "best_params": {
+      "learning_rate": 0.0005323617594751496,
+      "weight_decay": 1.764396768338157e-05,
+      "dropout": 0.0,
+      "k": 15
+    },
+    "best_trial": 8,
+    "n_trials": 50,
+    "n_pruned": 3
+  },
+  {
+    "model": "dko_invariants",
+    "dataset": "esol",
+    "best_value": 2.7741034626960754,
+    "best_params": {
+      "learning_rate": 0.0007082289560807123,
+      "weight_decay": 9.175424659330096e-05,
+      "dropout": 0.1,
+      "k": 20
+    },
+    "best_trial": 34,
+    "n_trials": 50,
+    "n_pruned": 9
+  },
+  {
+    "model": "dko_invariants",
+    "dataset": "lipophilicity",
+    "best_value": 1.5516082389014108,
+    "best_params": {
+      "learning_rate": 0.00038804094548305185,
+      "weight_decay": 9.593019506630753e-05,
+      "dropout": 0.2,
+      "k": 5
+    },
+    "best_trial": 47,
+    "n_trials": 50,
+    "n_pruned": 3
+  },
+  {
+    "model": "attention",
+    "dataset": "esol",
+    "error": "No trials are completed yet."
+  },
+  {
+    "model": "attention",
+    "dataset": "lipophilicity",
+    "error": "No trials are completed yet."
+  }
+]
